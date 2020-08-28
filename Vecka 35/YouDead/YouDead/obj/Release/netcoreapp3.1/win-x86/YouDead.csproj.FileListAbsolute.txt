@@ -1,0 +1,12 @@
+C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\bin\Release\netcoreapp3.1\win-x86\YouDead.exe
+C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\bin\Release\netcoreapp3.1\win-x86\YouDead.deps.json
+C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\bin\Release\netcoreapp3.1\win-x86\YouDead.runtimeconfig.json
+C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\bin\Release\netcoreapp3.1\win-x86\YouDead.runtimeconfig.dev.json
+C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\bin\Release\netcoreapp3.1\win-x86\YouDead.dll
+C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\bin\Release\netcoreapp3.1\win-x86\YouDead.pdb
+C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\obj\Release\netcoreapp3.1\win-x86\YouDead.AssemblyInfoInputs.cache
+C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\obj\Release\netcoreapp3.1\win-x86\YouDead.AssemblyInfo.cs
+C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\obj\Release\netcoreapp3.1\win-x86\YouDead.csproj.CoreCompileInputs.cache
+C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\obj\Release\netcoreapp3.1\win-x86\YouDead.dll
+C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\obj\Release\netcoreapp3.1\win-x86\YouDead.pdb
+C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\obj\Release\netcoreapp3.1\win-x86\YouDead.genruntimeconfig.cache
