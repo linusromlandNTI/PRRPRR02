@@ -1,13 +1,25 @@
-C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\bin\Debug\netcoreapp3.1\YouDead.exe
-C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\bin\Debug\netcoreapp3.1\YouDead.deps.json
-C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\bin\Debug\netcoreapp3.1\YouDead.runtimeconfig.json
-C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\bin\Debug\netcoreapp3.1\YouDead.runtimeconfig.dev.json
-C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\bin\Debug\netcoreapp3.1\YouDead.dll
-C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\bin\Debug\netcoreapp3.1\YouDead.pdb
-C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\obj\Debug\netcoreapp3.1\YouDead.csprojAssemblyReference.cache
-C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\obj\Debug\netcoreapp3.1\YouDead.AssemblyInfoInputs.cache
-C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\obj\Debug\netcoreapp3.1\YouDead.AssemblyInfo.cs
-C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\obj\Debug\netcoreapp3.1\YouDead.csproj.CoreCompileInputs.cache
-C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\obj\Debug\netcoreapp3.1\YouDead.dll
-C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\obj\Debug\netcoreapp3.1\YouDead.pdb
-C:\Users\Linus Romland\Desktop\GitHub\PRRPRR02\Vecka 35\YouDead\YouDead\obj\Debug\netcoreapp3.1\YouDead.genruntimeconfig.cache
+C:/Users/Linus Romland/Desktop/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/bin/Debug/netcoreapp3.1/YouDead.exe
+C:/Users/Linus Romland/Desktop/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/bin/Debug/netcoreapp3.1/YouDead.deps.json
+C:/Users/Linus Romland/Desktop/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/bin/Debug/netcoreapp3.1/YouDead.runtimeconfig.json
+C:/Users/Linus Romland/Desktop/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/bin/Debug/netcoreapp3.1/YouDead.runtimeconfig.dev.json
+C:/Users/Linus Romland/Desktop/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/bin/Debug/netcoreapp3.1/YouDead.dll
+C:/Users/Linus Romland/Desktop/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/bin/Debug/netcoreapp3.1/YouDead.pdb
+C:/Users/Linus Romland/Desktop/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/obj/Debug/netcoreapp3.1/YouDead.csprojAssemblyReference.cache
+C:/Users/Linus Romland/Desktop/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/obj/Debug/netcoreapp3.1/YouDead.AssemblyInfoInputs.cache
+C:/Users/Linus Romland/Desktop/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/obj/Debug/netcoreapp3.1/YouDead.AssemblyInfo.cs
+C:/Users/Linus Romland/Desktop/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/obj/Debug/netcoreapp3.1/YouDead.csproj.CoreCompileInputs.cache
+C:/Users/Linus Romland/Desktop/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/obj/Debug/netcoreapp3.1/YouDead.dll
+C:/Users/Linus Romland/Desktop/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/obj/Debug/netcoreapp3.1/YouDead.pdb
+C:/Users/Linus Romland/Desktop/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/obj/Debug/netcoreapp3.1/YouDead.genruntimeconfig.cache
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/bin/Debug/netcoreapp3.1/YouDead.deps.json
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/bin/Debug/netcoreapp3.1/YouDead.runtimeconfig.json
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/bin/Debug/netcoreapp3.1/YouDead.runtimeconfig.dev.json
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/bin/Debug/netcoreapp3.1/YouDead.dll
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/bin/Debug/netcoreapp3.1/YouDead.pdb
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/obj/Debug/netcoreapp3.1/YouDead.csprojAssemblyReference.cache
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/obj/Debug/netcoreapp3.1/YouDead.AssemblyInfoInputs.cache
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/obj/Debug/netcoreapp3.1/YouDead.AssemblyInfo.cs
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/obj/Debug/netcoreapp3.1/YouDead.csproj.CoreCompileInputs.cache
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/obj/Debug/netcoreapp3.1/YouDead.dll
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/obj/Debug/netcoreapp3.1/YouDead.pdb
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/obj/Debug/netcoreapp3.1/YouDead.genruntimeconfig.cache

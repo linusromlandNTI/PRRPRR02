@@ -70,11 +70,11 @@ namespace YouDead
             Console.WriteLine(printThis);
             if (alive)
             {
-                Console.WriteLine(printThis + "\nYou are alive!\nYou are {0} years old!", age);
+                Console.WriteLine(printThis + "\nYou are alive!\nYou are {0} years old!\n Your age with Math.Sqrt: {1}", age, Math.Sqrt(age));
             }
             else
             {
-                Console.WriteLine(printThis + "\nYou are Dead!\nYou lived for {0} years!", ageWhenDeath);
+                Console.WriteLine(printThis + "\nYou are Dead!\nYou lived for {0} years!\n Your age with Math.Sqrt: {1}", ageWhenDeath, Math.Sqrt(age));
 
             }
             Console.WriteLine("Press any key to close the application!");
