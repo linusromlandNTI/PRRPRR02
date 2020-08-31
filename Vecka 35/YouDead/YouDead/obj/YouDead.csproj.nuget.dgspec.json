@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Linus Romland\\Desktop\\GitHub\\PRRPRR02\\Vecka 35\\YouDead\\YouDead\\YouDead.csproj": {}
+    "/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/YouDead.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Linus Romland\\Desktop\\GitHub\\PRRPRR02\\Vecka 35\\YouDead\\YouDead\\YouDead.csproj": {
+    "/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/YouDead.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Linus Romland\\Desktop\\GitHub\\PRRPRR02\\Vecka 35\\YouDead\\YouDead\\YouDead.csproj",
+        "projectUniqueName": "/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/YouDead.csproj",
         "projectName": "YouDead",
-        "projectPath": "C:\\Users\\Linus Romland\\Desktop\\GitHub\\PRRPRR02\\Vecka 35\\YouDead\\YouDead\\YouDead.csproj",
-        "packagesPath": "C:\\Users\\Linus Romland\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Linus Romland\\Desktop\\GitHub\\PRRPRR02\\Vecka 35\\YouDead\\YouDead\\obj\\",
+        "projectPath": "/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/YouDead.csproj",
+        "packagesPath": "/Users/linusromland/.nuget/packages/",
+        "outputPath": "/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka 35/YouDead/YouDead/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Linus Romland\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/linusromland/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,6 +35,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Avalonia": {
+              "target": "Package",
+              "version": "[0.9.12, )"
+            },
+            "Avalonia.Desktop": {
+              "target": "Package",
+              "version": "[0.9.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -52,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
         }
       }
     }
