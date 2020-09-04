@@ -20,7 +20,7 @@
       "outputPath": "/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka36/TestProject/TestProject/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/linusromland/.config/NuGet/NuGet.Config"
+        "/Users/linusromland/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
