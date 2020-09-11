@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Metoder
 {
@@ -6,15 +7,42 @@ namespace Metoder
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Add to int? Give me the first one!");
-            int a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Give me the second one");
-            int b = int.Parse(Console.ReadLine());
-            Console.WriteLine(addInt(a, b));
+            string[] strings = {"ett", "två", "tre", "fyra"};
+            foreach (string a in reverseArray(strings))
+            {
+                Console.WriteLine(a);
+            }
         }
-        static int addInt(int a, int b)
+        static int addInt(int[] a)
         {
-            return a + b;
+            int sum = 0;
+            foreach(int b in a)
+            {
+                sum = sum + b;
+            }
+            return sum;
+        }
+
+        static string[] reverseArray(string[] a)
+        {
+            a.Reverse();
+            return a;
+        }
+
+        static int[] largeAndSmall(int[] a)
+        {
+            int[] num = { 0, 0 };
+            foreach (int b in a)
+            {
+                if(num[0] < b)
+                {
+                    num[0] = b;
+                }else if(num[1] > b)
+                {
+                    num[1] = b;
+                }
+            }
+            return num;
         }
     }
 }
