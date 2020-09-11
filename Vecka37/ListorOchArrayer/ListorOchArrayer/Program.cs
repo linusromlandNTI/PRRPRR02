@@ -19,6 +19,7 @@ namespace ListorOchArrayer
                 persons[i] = new People(name, age, alive);
                 Console.WriteLine("\n\n\nNext Person now..\n");
             }
+      
             persons.Reverse();
             for (int i = 0; i < 5; i++)
             {
@@ -26,6 +27,6 @@ namespace ListorOchArrayer
             }
             }
 
-        }
+    }
     }
 

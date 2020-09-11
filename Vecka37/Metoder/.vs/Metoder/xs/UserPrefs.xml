@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{427A75DA-4EB1-4AC3-8CA7-09B23B7A5CAA}|Default">
+  <MonoDevelop.Ide.ItemProperties.Metoder FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Metoder/Program.cs">
+    <Files>
+      <File FileName="Metoder/Program.cs" Line="9" Column="38" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Metoder" expanded="True">
+            <Node name="Metoder" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
