@@ -1,0 +1,12 @@
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka37/ListorOchArrayer/ListorOchArrayer/bin/Debug/netcoreapp3.1/ListorOchArrayer.deps.json
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka37/ListorOchArrayer/ListorOchArrayer/bin/Debug/netcoreapp3.1/ListorOchArrayer.runtimeconfig.json
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka37/ListorOchArrayer/ListorOchArrayer/bin/Debug/netcoreapp3.1/ListorOchArrayer.runtimeconfig.dev.json
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka37/ListorOchArrayer/ListorOchArrayer/bin/Debug/netcoreapp3.1/ListorOchArrayer.dll
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka37/ListorOchArrayer/ListorOchArrayer/bin/Debug/netcoreapp3.1/ListorOchArrayer.pdb
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka37/ListorOchArrayer/ListorOchArrayer/obj/Debug/netcoreapp3.1/ListorOchArrayer.csprojAssemblyReference.cache
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka37/ListorOchArrayer/ListorOchArrayer/obj/Debug/netcoreapp3.1/ListorOchArrayer.AssemblyInfoInputs.cache
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka37/ListorOchArrayer/ListorOchArrayer/obj/Debug/netcoreapp3.1/ListorOchArrayer.AssemblyInfo.cs
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka37/ListorOchArrayer/ListorOchArrayer/obj/Debug/netcoreapp3.1/ListorOchArrayer.csproj.CoreCompileInputs.cache
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka37/ListorOchArrayer/ListorOchArrayer/obj/Debug/netcoreapp3.1/ListorOchArrayer.dll
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka37/ListorOchArrayer/ListorOchArrayer/obj/Debug/netcoreapp3.1/ListorOchArrayer.pdb
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka37/ListorOchArrayer/ListorOchArrayer/obj/Debug/netcoreapp3.1/ListorOchArrayer.genruntimeconfig.cache
