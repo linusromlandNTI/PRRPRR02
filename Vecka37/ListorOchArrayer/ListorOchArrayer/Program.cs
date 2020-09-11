@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace ListorOchArrayer
 {
@@ -18,20 +19,13 @@ namespace ListorOchArrayer
                 persons[i] = new People(name, age, alive);
                 Console.WriteLine("\n\n\nNext Person now..\n");
             }
-            while (true)
+            persons.Reverse();
+            for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine("What person do you want the information from? 0-4");
-                int num = int.Parse(Console.ReadLine());
-                Console.WriteLine("\nName: " + persons[num].name + "\nAge: " +  persons[num].age + "\nAlive: " + persons[num].alive);
-
-                Console.WriteLine("Get info from other person? y/n");
-                string yn = Console.ReadLine().ToUpper();
-                if (yn.Equals("N"))
-                {
-                    System.Environment.Exit(1);
-                }
+                Console.WriteLine("\nName: " + persons[i].name + "\nAge: " + persons[i].age + "\nAlive: " + persons[i].alive);
+            }
             }
 
         }
     }
-}
+
