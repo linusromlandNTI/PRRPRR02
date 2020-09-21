@@ -15,7 +15,7 @@ namespace Metoder
         }
         static int addInt(int[] a)
         {
-            int sum = 0;
+            int sum = 0; 
             foreach(int b in a)
             {
                 sum = sum + b;
