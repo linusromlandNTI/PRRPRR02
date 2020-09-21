@@ -1,0 +1,12 @@
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka39/OOPTest/OOPTest/obj/Debug/netcoreapp3.1/OOPTest.csprojAssemblyReference.cache
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka39/OOPTest/OOPTest/obj/Debug/netcoreapp3.1/OOPTest.AssemblyInfoInputs.cache
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka39/OOPTest/OOPTest/obj/Debug/netcoreapp3.1/OOPTest.AssemblyInfo.cs
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka39/OOPTest/OOPTest/obj/Debug/netcoreapp3.1/OOPTest.csproj.CoreCompileInputs.cache
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka39/OOPTest/OOPTest/bin/Debug/netcoreapp3.1/OOPTest.deps.json
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka39/OOPTest/OOPTest/bin/Debug/netcoreapp3.1/OOPTest.runtimeconfig.json
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka39/OOPTest/OOPTest/bin/Debug/netcoreapp3.1/OOPTest.runtimeconfig.dev.json
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka39/OOPTest/OOPTest/bin/Debug/netcoreapp3.1/OOPTest.dll
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka39/OOPTest/OOPTest/bin/Debug/netcoreapp3.1/OOPTest.pdb
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka39/OOPTest/OOPTest/obj/Debug/netcoreapp3.1/OOPTest.dll
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka39/OOPTest/OOPTest/obj/Debug/netcoreapp3.1/OOPTest.pdb
+/Users/linusromland/Documents/GitHub/PRRPRR02/Vecka39/OOPTest/OOPTest/obj/Debug/netcoreapp3.1/OOPTest.genruntimeconfig.cache

@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{B7B5966E-BF0F-432D-A0A1-C5AAC68BC34B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OOPTest/Program.cs">
+    <Files>
+      <File FileName="OOPTest/Program.cs" Line="50" Column="30" />
+      <File FileName="OOPTest/Person.cs" Line="16" Column="20" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OOPTest" expanded="True">
+            <Node name="OOPTest" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.OOPTest PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
