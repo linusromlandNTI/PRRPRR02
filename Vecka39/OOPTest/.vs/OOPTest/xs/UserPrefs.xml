@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="OOPTest/Program.cs">
     <Files>
       <File FileName="OOPTest/Program.cs" Line="50" Column="30" />
-      <File FileName="OOPTest/Person.cs" Line="16" Column="20" />
+      <File FileName="OOPTest/Person.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
