@@ -1,20 +1,18 @@
 ﻿<Properties StartupConfiguration="{180C4426-90AE-4FE1-B76C-A36C17D3A815}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Labb1/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Labb1/ShoppingCart.cs">
     <Files>
-      <File FileName="Labb1/Program.cs" Line="62" Column="66" />
-      <File FileName="Labb1/Customer.cs" Line="18" Column="2" />
-      <File FileName="Labb1/Goods.cs" Line="13" Column="1" />
-      <File FileName="Labb1/Adress.cs" Line="4" Column="1" />
+      <File FileName="Labb1/Program.cs" Line="49" Column="39" />
+      <File FileName="Labb1/Customer.cs" Line="16" Column="10" />
+      <File FileName="Labb1/Goods.cs" Line="21" Column="2" />
+      <File FileName="Labb1/Adress.cs" Line="16" Column="24" />
+      <File FileName="Labb1/ShoppingCart.cs" Line="5" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Labb1" expanded="True">
             <Node name="Labb1" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
-              </Node>
-              <Node name="Program.cs" selected="True" />
+              <Node name="ShoppingCart.cs" selected="True" />
             </Node>
           </Node>
         </State>
