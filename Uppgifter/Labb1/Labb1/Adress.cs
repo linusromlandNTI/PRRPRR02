@@ -33,7 +33,6 @@ namespace Labb1
             }
             _zipCode = getZipCode();
             _postAdress = getPostAdress(_zipCode);
-            Console.WriteLine("\nYour Adress: \n" + _street + " " + _streetNumber + "\n" + _zipCode + " " + _postAdress);
         }
         public int getZipCode()
         {

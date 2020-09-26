@@ -6,12 +6,13 @@ namespace Labb1
         public string _userName;
         public Adress _adress;
         public int[] _shoppingCart;
-        public int _persNr;
+        public long _persNr;
 
-        public Customer(string userName, int persNr)
+        public Customer(string userName, long persNr, Adress adress)
         {
             _userName = userName;
             _persNr = persNr;
+            _adress = adress;
         }
 
     }
