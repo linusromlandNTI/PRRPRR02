@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace Labb1
 {
     class Program
@@ -7,7 +8,9 @@ namespace Labb1
         public Customer[] customers;
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome the CLI Shopping Experience!\n Let's get you sorted out and create a new Customer!");
+            //Console.WriteLine("Welcome the CLI Shopping Experience!\n Let's get you sorted out and create a new Customer!");
+            Adress tmp = new Adress();
+            
         }
         public void createCustomer(string userName, string adress, int postAdress, string zipCode, int persNr)
         {
@@ -21,10 +24,10 @@ namespace Labb1
                 }
                 else
                 {
-                    Console.WriteLine("username taken, try another one!");
+                    Console.WriteLine("Username taken, try another one!");
                 }
             }
-
+            
         }
 
         public bool usernameUsed(string name)
@@ -40,5 +43,7 @@ namespace Labb1
             }
             return toReturn;
         }
+
+        
     }
 }
