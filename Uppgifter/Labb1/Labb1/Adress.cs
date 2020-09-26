@@ -41,7 +41,7 @@ namespace Labb1
             {
                 try
                 {
-                    Console.WriteLine("Whats your Zipcode?");
+                    Console.WriteLine("Whats your Zip Code?");
                     zipcode = int.Parse(Console.ReadLine());
                     if(zipcode > 9999)
                     {

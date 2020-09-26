@@ -8,7 +8,7 @@ namespace Labb1
         public static List<Customer> _customers = new List<Customer>();
         public static List<string> _categories = new List<string>();
         public static List<Goods> _goods = new List<Goods>();
-        public static int _selectedPerson;
+        public static int _selectedPerson = 0;
         static void Main(string[] args)
         {
             generateGame();
@@ -27,6 +27,7 @@ namespace Labb1
                 {
                     case "1":
                         selectCustomer();
+                        selectedPersonMenu();
                         break;
                     case "2":
                         createCustomer();
@@ -37,6 +38,7 @@ namespace Labb1
                 }
             }
         }
+
         public static void selectedPersonMenu()
         {
             bool run = true;
@@ -63,9 +65,10 @@ namespace Labb1
             while (true)
             {
                 Console.WriteLine("What Category? Just type the number corresponding to the category!");
-                for (int i = 0; i > _categories.Count; i++)
+                for (int i = 0; i < _categories.Count; i++)
                 {
-                    Console.WriteLine("(" + i + ") - " + _categories[i - 1]);
+                    int tmp = i + 1;
+                    Console.WriteLine("(" + tmp + ") - " + _categories[i]);
                 }
                 int selectCategory = int.Parse(Console.ReadLine()) - 1;
                 if (_categories.Count < selectCategory)
@@ -75,9 +78,81 @@ namespace Labb1
                 else
                 {
                     Console.WriteLine(_categories[selectCategory] + "is selected!");
+                    while (true)
+                    {
+                        Console.WriteLine("What Product? Just type the number corresponding to the product!");
+                        for (int i = 0; i < numberOfProuductsInCategory(selectCategory); i++)
+                        {
+                            Console.WriteLine("(" + i + ") - " + _categories[i - 1]);
+                        }
+                        Console.WriteLine("(0) - Go back");
+                        int selectedProduct = int.Parse(Console.ReadLine()) - 1;
+                        if (selectedProduct == 0)
+                        {
+                            break;
+                        }
+                        else if (numberOfProuductsInCategory(selectCategory) < selectedProduct)
+                        {
+                            Console.WriteLine("Thats not a valid product! Try Again!");
+                        }
+                        else
+                        {
+                            selectProduct(selectCategory, selectedProduct);
+                            break;
+                        }
+                    }
                     break;
                 }
             }
+        }
+
+        public static void selectProduct(int category, int product)
+        {
+            for (int i = 0; i < _goods.Count; i++)
+            {
+                int productname = 0;
+                if(_goods[i]._category == category)
+                {
+                    productname++;
+                    if(productname == product)
+                    {
+                        Console.WriteLine("\n\n\n" + _goods[i]._name + "\nPrice: " + _goods[i]._price + "\nWeight (g): " + _goods[i]._weight + "\nDescriptions: " + _goods[i]._desc + "\n\n Just type the number of the quantity you want. 0 for none!");
+                        int quantity;
+                        while (true)
+                        {
+                            try
+                        {
+                                quantity = int.Parse(Console.ReadLine());
+                                break;
+                            }
+                        catch
+                            {
+                                Console.WriteLine("Not a valid amount! Try Again!");
+                                continue;
+                            }
+                        }
+                        if(quantity != 0)
+                        {
+                            _customers[_selectedPerson]._shoppingCart.Add(new ShoppingCart(_goods[i], quantity));
+
+                        }
+
+                    }
+                }
+            }
+        }
+
+        public static int numberOfProuductsInCategory(int selectedCategory)
+        {
+            int numberOfProuducts = 0;
+            for (int i = 0; i < _goods.Count; i++)
+            {
+                if(_goods[i]._category == selectedCategory)
+                {
+                    numberOfProuducts++;
+                }
+            }
+            return numberOfProuducts;
         }
 
         public static void selectCustomer()
@@ -85,9 +160,11 @@ namespace Labb1
             while (true)
             {
                 Console.WriteLine("Type the number of the Customer you want to select.");
-                for (int i = 0; i > _customers.Count; i++)
+                for (int i = 0; i < _customers.Count; i++)
                 {
-                    Console.WriteLine("(" + i + ") - " + _customers[i - 1]._userName);
+                    int tmp = i + 1;
+
+                    Console.WriteLine("(" + tmp + ") - " + _customers[i]._userName);
                 }
                 int selectPerson = int.Parse(Console.ReadLine()) - 1;
                 if(_customers.Count < selectPerson)
@@ -97,7 +174,7 @@ namespace Labb1
                 else
                 {
                     _selectedPerson = selectPerson;
-                    Console.WriteLine(_customers[_selectedPerson]._userName + "is selected!");
+                    Console.WriteLine(_customers[_selectedPerson]._userName + " is selected!");
                     break;
                 }
             }
@@ -267,7 +344,7 @@ namespace Labb1
             }
             Adress adress = new Adress();
             _customers.Add(new Customer(username, persNr, adress));
-            Console.WriteLine("\nNew Customer Created!\n\nName: " + username + "\nSocial Security Number: " + persNr + "\n\nAdress: \n" + adress._street + " " + adress._streetNumber + "\n" + adress._zipCode + " " + adress._postAdress);
+            Console.WriteLine("\nNew Customer Created!\n\nName: " + username + "\nSocial Security Number: " + persNr + "\n\nAdress: \n" + adress._street + " " + adress._streetNumber + "\n" + adress._zipCode + " " + adress._postAdress + "\n");
 
         }
 
