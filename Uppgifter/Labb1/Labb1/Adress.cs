@@ -34,6 +34,7 @@ namespace Labb1
             _zipCode = getZipCode();
             _postAdress = getPostAdress(_zipCode);
         }
+
         public int getZipCode()
         {
             int zipcode;
@@ -64,27 +65,25 @@ namespace Labb1
 
         static string getPostAdress(int zip)
         {
-            XmlDocument xmlKey = new XmlDocument();
-            xmlKey.Load("auth.xml");
-            XmlNodeList xmlKeyNodeList = xmlKey.SelectNodes("keys");
-            XmlNode xmlKeyNode = xmlKeyNodeList[0];
-            string key = xmlKeyNode.SelectSingleNode("key").InnerText;
-            string url = "https://api.papapi.se/lite/?query=" + zip + "&format=xml&apikey=" + key;
+            var response = "";
+            try
+            {
+                string url = "http://zipcode.romland.space/?zip=" + zip;
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                request.Method = "GET";
 
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-            request.Method = "GET";
-
-            var webResponse = request.GetResponse();
-            var webStream = webResponse.GetResponseStream();
-            var responseReader = new StreamReader(webStream);
-            var response = responseReader.ReadToEnd();
-
-            XmlDocument doc = new XmlDocument();
-            doc.LoadXml(response);
-            responseReader.Close();
-            XmlNodeList nodelist = doc.SelectNodes("results");
-            XmlNode node = nodelist[0];
-            return node.SelectSingleNode("result").SelectSingleNode("city").InnerText;
+                var webResponse = request.GetResponse();
+                var webStream = webResponse.GetResponseStream();
+                var responseReader = new StreamReader(webStream);
+                response = responseReader.ReadToEnd();
+            }
+            catch
+            {
+                Console.WriteLine("Server not working currently! Type your Post Adress manually!");
+                response = Console.ReadLine();
+            }
+            
+            return response;
         }
     }
 }

@@ -5,6 +5,7 @@ namespace Labb1
 {
     public class Customer
     {
+
         public string _userName;
         public Adress _adress;
         public List<ShoppingCart> _shoppingCart = new List<ShoppingCart>();

@@ -6,9 +6,10 @@ namespace Labb1
     class Program
     {
         public static List<Customer> _customers = new List<Customer>();
-        public static List<string> _categories = new List<string>();
-        public static List<Goods> _goods = new List<Goods>();
+        public static Categories _goods = new Categories();
+        public static List<Goods> _selectedCategories = new List<Goods>();
         public static int _selectedPerson = 0;
+
         static void Main(string[] args)
         {
             generateGame();
@@ -44,16 +45,16 @@ namespace Labb1
             bool run = true;
             while (run)
             {
-                Console.WriteLine("What do you want to do?\n(1) - List Products\n(2) - Shopping Cart\n(3) - Go back");
+                Console.WriteLine("What do you want to do?\n(1) - List Products\n(2) - Shopping Cart\n(0) - Go back");
                 switch (Console.ReadLine())
                 {
                     case "1":
                         listProducts();
                         break;
                     case "2":
-                        createCustomer();
+                        listShoppingCart();
                         break;
-                    case "3":
+                    case "0":
                         run = false;
                         break;
                 }
@@ -62,97 +63,76 @@ namespace Labb1
 
         public static void listProducts()
         {
-            while (true)
+            bool run = true;
+            while (run)
             {
-                Console.WriteLine("What Category? Just type the number corresponding to the category!");
-                for (int i = 0; i < _categories.Count; i++)
+                Console.WriteLine("Choose the Category you want! \nJust type the number of the corresponding category!\n(1) - Foods\n(2) - Clothes\n(3) - Electronics\n(4) - Furniture\n(0) - Go back");
+                int selected = int.Parse(Console.ReadLine());
+                if(selected >= 0 && selected <= 5)
                 {
-                    int tmp = i + 1;
-                    Console.WriteLine("(" + tmp + ") - " + _categories[i]);
-                }
-                int selectCategory = int.Parse(Console.ReadLine()) - 1;
-                if (_categories.Count < selectCategory)
-                {
-                    Console.WriteLine("Thats not a valid category! Try Again!");
-                }
-                else
-                {
-                    Console.WriteLine(_categories[selectCategory] + "is selected!");
-                    while (true)
+                    switch (selected)
                     {
-                        Console.WriteLine("What Product? Just type the number corresponding to the product!");
-                        for (int i = 0; i < numberOfProuductsInCategory(selectCategory); i++)
-                        {
-                            Console.WriteLine("(" + i + ") - " + _categories[i - 1]);
-                        }
-                        Console.WriteLine("(0) - Go back");
-                        int selectedProduct = int.Parse(Console.ReadLine()) - 1;
-                        if (selectedProduct == 0)
-                        {
+                        case 0:
+                            run = false;
                             break;
-                        }
-                        else if (numberOfProuductsInCategory(selectCategory) < selectedProduct)
-                        {
-                            Console.WriteLine("Thats not a valid product! Try Again!");
-                        }
-                        else
-                        {
-                            selectProduct(selectCategory, selectedProduct);
+                        case 1:
+                            Console.WriteLine("Food is selected!");
+                            _selectedCategories = _goods._foods;
                             break;
-                        }
-                    }
-                    break;
-                }
-            }
-        }
-
-        public static void selectProduct(int category, int product)
-        {
-            for (int i = 0; i < _goods.Count; i++)
-            {
-                int productname = 0;
-                if(_goods[i]._category == category)
-                {
-                    productname++;
-                    if(productname == product)
-                    {
-                        Console.WriteLine("\n\n\n" + _goods[i]._name + "\nPrice: " + _goods[i]._price + "\nWeight (g): " + _goods[i]._weight + "\nDescriptions: " + _goods[i]._desc + "\n\n Just type the number of the quantity you want. 0 for none!");
-                        int quantity;
-                        while (true)
-                        {
-                            try
-                        {
-                                quantity = int.Parse(Console.ReadLine());
-                                break;
-                            }
-                        catch
-                            {
-                                Console.WriteLine("Not a valid amount! Try Again!");
-                                continue;
-                            }
-                        }
-                        if(quantity != 0)
-                        {
-                            _customers[_selectedPerson]._shoppingCart.Add(new ShoppingCart(_goods[i], quantity));
-
-                        }
-
+                        case 2:
+                            Console.WriteLine("Clothes is selected!");
+                            _selectedCategories = _goods._clothes;
+                            break;
+                        case 3:
+                            Console.WriteLine("Electronics is selected!");
+                            _selectedCategories = _goods._electronics;
+                            break;
+                        case 4:
+                            Console.WriteLine("Furniture is selected!");
+                            _selectedCategories = _goods._furniture;
+                            break;
                     }
                 }
+                Console.WriteLine("\nChoose the product you want! \nJust type the number of the corresponding prduct!");
+                for(int i = 0; i < _selectedCategories.Count; i++)
+                {
+                    Console.WriteLine("(" + i + ") - " + _selectedCategories[i]._name);
+                }
+                int selectedProduct = int.Parse(Console.ReadLine());
+                run = selectProduct(selectedProduct);
             }
+
+
         }
 
-        public static int numberOfProuductsInCategory(int selectedCategory)
+        public static void listShoppingCart()
         {
-            int numberOfProuducts = 0;
-            for (int i = 0; i < _goods.Count; i++)
+            Console.WriteLine("Your Shopping Cart:\n");
+            int price = 0;
+            int weight = 0;
+            for (int i = 0; i < _customers[_selectedPerson]._shoppingCart.Count; i++)
             {
-                if(_goods[i]._category == selectedCategory)
-                {
-                    numberOfProuducts++;
-                }
+                Console.WriteLine(_customers[_selectedPerson]._shoppingCart[i]._quantity + "x " + _customers[_selectedPerson]._shoppingCart[i]._goods._name);
+                price = price + (_customers[_selectedPerson]._shoppingCart[i]._goods._price * _customers[_selectedPerson]._shoppingCart[i]._quantity);
+                weight = weight + (_customers[_selectedPerson]._shoppingCart[i]._goods._weight * _customers[_selectedPerson]._shoppingCart[i]._quantity);
             }
-            return numberOfProuducts;
+            Console.WriteLine("Your total price is: " + price + "SEK\n" + "Your total weight is " + weight + "gram\n\n");
+
+        }
+
+        public static bool selectProduct(int product)
+        {
+            Console.WriteLine(_selectedCategories[product]._name + "is selected\n\n");
+            Console.WriteLine(_selectedCategories[product]._name + "\nWeight: " + _selectedCategories[product]._weight + "\nDescriptions: " + _selectedCategories[product]._desc + "\nPrice: " + _selectedCategories[product]._price + "SEK");
+            Console.WriteLine("Just type the quantity you want, type 0 for none!");
+            int quantity = int.Parse(Console.ReadLine());
+            if(quantity != 0)
+            {
+                _customers[_selectedPerson]._shoppingCart.Add(new ShoppingCart(_selectedCategories[product], quantity));
+                Console.WriteLine("Added " + _selectedCategories[product]._name + " to the Shopping Cart!\n");
+            }
+
+            return false;
         }
 
         public static void selectCustomer()
@@ -183,131 +163,108 @@ namespace Labb1
 
         public static void generateGame()
         {
-
-            //categories
-            _categories.Add("Food");
-            _categories.Add("Clothes");
-            _categories.Add("Electronics");
-            _categories.Add("Furniture");
-
             //Food Goods
-            _goods.Add(new Goods(
+            _goods._foods.Add(new Goods(
                 200,
                 "Marabou Milk Choclate",
                 22,
-                1,
                 "Marabou is a famous Swedish Brand that makes the greates chocolate. Milk Chocolate is the most popular one."
                 ));
 
-            _goods.Add(new Goods(
+            _goods._foods.Add(new Goods(
                 50,
                 "Peanuts",
                 17,
-                1,
                 "Eldorado Peanuts, a cheap alternative."
                 ));
-            _goods.Add(new Goods(
+            _goods._foods.Add(new Goods(
                 2000,
                 "Milk",
                 14,
-                1,
                 "Arla Milk, from a farm near you"
                 ));
-            _goods.Add(new Goods(
+            _goods._foods.Add(new Goods(
                 500,
                 "Monster Energy",
                 18,
-                1,
                 "The greates energy drink of all time."
                 ));
 
             //Clothes goods
-            _goods.Add(new Goods(
+            _goods._clothes.Add(new Goods(
                250,
                "T-Shirt",
                299,
-               2,
                "A plain white T-Shirt."
                ));
-            _goods.Add(new Goods(
+            _goods._clothes.Add(new Goods(
                380,
-               "T-Shirt",
+               "Jeans",
                699,
-               2,
                "A pair of Blue Jeans."
                ));
-            _goods.Add(new Goods(
+            _goods._clothes.Add(new Goods(
                250,
                "Hoodie",
                549,
-               2,
                "A black hoodie."
                ));
-            _goods.Add(new Goods(
+            _goods._clothes.Add(new Goods(
                250,
                "Shoes",
                1049,
-               2,
                "White Sneakers in Size EU 43."
                ));
 
             //Electronic Goods
-            _goods.Add(new Goods(
+            _goods._electronics.Add(new Goods(
                2213,
                "Macbook Pro Early 2020",
                41534,
-               3,
                "Intel Core i9, 32GB Ram, 8TB SSD"
                ));
-            _goods.Add(new Goods(
+            _goods._electronics.Add(new Goods(
                1123,
                "RTX 3090",
                12000,
-               3,
                "Asus ROG RTX 3090"
                ));
-            _goods.Add(new Goods(
+            _goods._electronics.Add(new Goods(
                1123,
                "Samsung Galaxy Fold Z-Flip2",
                11999,
-               3,
                "Samsung Galaxy Fold Z-Flip2 512GB"
                ));
-            _goods.Add(new Goods(
+            _goods._electronics.Add(new Goods(
                1000,
                "iPhone 11 Pro Max",
                18999,
-               3,
                "1024GB Green"
                ));
 
             //Furniture Goods
-            _goods.Add(new Goods(
+            _goods._furniture.Add(new Goods(
                5000,
                "Dining Table",
                4399,
-               4,
                "White IKEA Dining Table"
                ));
-            _goods.Add(new Goods(
+            _goods._furniture.Add(new Goods(
                2000,
                "Markus Desk Chair",
                1199,
-               4,
                "Desk Chair - IKEA Markus"
                ));
-            _goods.Add(new Goods(
+            _goods._furniture.Add(new Goods(
                3000,
                "Sofa",
                16799,
-               4,
                "IKEA Corner Sofa"
                ));
-            _goods.Add(new Goods(
+            _goods._furniture.Add(new Goods(
                5000,
                "Bed",
                9999,
-               4,
                "King-Size Bed 180cm"
                ));
         }
