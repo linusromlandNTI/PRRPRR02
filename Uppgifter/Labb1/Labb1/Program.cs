@@ -9,6 +9,7 @@ namespace Labb1
         public static Categories _goods = new Categories();
         public static List<Goods> _selectedCategories = new List<Goods>();
         public static int _selectedPerson = 0;
+        private static bool run = true;
 
         static void Main(string[] args)
         {
@@ -20,21 +21,22 @@ namespace Labb1
 
         public static void mainMenu()
         {
-            bool run = true;
-            while (run)
+            bool running = true;
+            while (running)
             {
-                Console.WriteLine("What do you want to do?\n(1) - Select Customer\n(2) - Create Customer\n(3) - Exit");
+                Console.WriteLine("What do you want to do?\n(1) - Select Customer\n(2) - Create Customer\n(0) - Exit");
                 switch (Console.ReadLine())
                 {
                     case "1":
                         selectCustomer();
+                        run = true;
                         selectedPersonMenu();
                         break;
                     case "2":
                         createCustomer();
                         break;
-                    case "3":
-                        run = false;
+                    case "0":
+                        running = false;
                         break;
                 }
             }
@@ -42,7 +44,6 @@ namespace Labb1
 
         public static void selectedPersonMenu()
         {
-            bool run = true;
             while (run)
             {
                 Console.WriteLine("What do you want to do?\n(1) - List Products\n(2) - Shopping Cart\n(0) - Go back");
@@ -67,7 +68,7 @@ namespace Labb1
             while (run)
             {
                 Console.WriteLine("Choose the Category you want! \nJust type the number of the corresponding category!\n(1) - Foods\n(2) - Clothes\n(3) - Electronics\n(4) - Furniture\n(0) - Go back");
-                int selected = int.Parse(Console.ReadLine());
+                int selected = intInput();
                 if(selected >= 0 && selected <= 5)
                 {
                     switch (selected)
@@ -96,9 +97,10 @@ namespace Labb1
                 Console.WriteLine("\nChoose the product you want! \nJust type the number of the corresponding prduct!");
                 for(int i = 0; i < _selectedCategories.Count; i++)
                 {
-                    Console.WriteLine("(" + i + ") - " + _selectedCategories[i]._name);
+                    int tmp = i + 1;
+                    Console.WriteLine("(" + tmp + ") - " + _selectedCategories[i]._name);
                 }
-                int selectedProduct = int.Parse(Console.ReadLine());
+                int selectedProduct = (intInput() -1);
                 run = selectProduct(selectedProduct);
             }
 
@@ -107,25 +109,119 @@ namespace Labb1
 
         public static void listShoppingCart()
         {
-            Console.WriteLine("Your Shopping Cart:\n");
-            int price = 0;
-            int weight = 0;
-            for (int i = 0; i < _customers[_selectedPerson]._shoppingCart.Count; i++)
-            {
+           Console.WriteLine("\n\nYour Shopping Cart:\n");
+           int price = 0;
+           int weight = 0;
+           for (int i = 0; i < _customers[_selectedPerson]._shoppingCart.Count; i++)
+           {
                 Console.WriteLine(_customers[_selectedPerson]._shoppingCart[i]._quantity + "x " + _customers[_selectedPerson]._shoppingCart[i]._goods._name);
                 price = price + (_customers[_selectedPerson]._shoppingCart[i]._goods._price * _customers[_selectedPerson]._shoppingCart[i]._quantity);
                 weight = weight + (_customers[_selectedPerson]._shoppingCart[i]._goods._weight * _customers[_selectedPerson]._shoppingCart[i]._quantity);
-            }
-            Console.WriteLine("Your total price is: " + price + "SEK\n" + "Your total weight is " + weight + "gram\n\n");
+           }
+           int shipping = calculateShippingCost(weight, price);
+           Console.WriteLine("\nYour total price is: " + price + "SEK\n" + "Your total weight is " + weight + "gram\nShipping: " + shipping + "SEK");
+            Console.WriteLine("\nWhat do you want to do?\n(1) - Purchase\n(2) - Remove Product from Cart\n(0) - Go Back");
+            int inputint;
 
+            long age = (DateTime.Now.Year - getFirstDigits(_customers[_selectedPerson]._persNr));
+            while (true)
+            {
+                inputint = intInput();
+                if (inputint == 0 || (inputint > 0 && inputint <= 3))
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Not valid, try again");
+                }
+            }
+            switch (inputint)
+            {
+                case 1:
+                    purchase(price, shipping, age);
+                    break;
+                case 2:
+                    deleteProduct();
+                    break;
+                case 0:
+                    break;
+
+            }
+        }
+
+        public static long getFirstDigits(long number)
+        {
+            number = Math.Abs(number);
+            if (number == 0)
+                return number;
+            long numberOfDigits = (long)Math.Floor(Math.Log10(number) + 1);
+            if (numberOfDigits >= 4)
+                return (long)Math.Truncate((number / Math.Pow(10, numberOfDigits - 4)));
+            else
+                return number;
+        }
+
+        public static void purchase(int price, int shipping, long age)
+        {
+            if(age > 65)
+            {
+                Console.WriteLine("\nYou are over 65 years! You apply for the elders discount!\n You get 20% off the entire purchase!");
+                Console.WriteLine("Your discount: " + ((int)(price * 0.2)) + "SEK");
+                price = ((int)(price * 0.8));
+            }
+            Console.WriteLine("\nYour total is: " + price + "SEK\nShipping: " + shipping + "SEK\nItems will be shipped to:\n" + _customers[_selectedPerson]._adress._street + " " + _customers[_selectedPerson]._adress._streetNumber + "\n" + _customers[_selectedPerson]._adress._zipCode + " " + _customers[_selectedPerson]._adress._postAdress + "\nPayment is via Swish.\nSwish " + (price+shipping) + "SEK to 070-601 51 35.\nPress any key when payment is complete!");
+            Console.ReadKey();
+            Console.WriteLine("Thank you for your Purchase!");
+            _customers[_selectedPerson]._shoppingCart.Clear();
+            run = false;
+        }
+
+        public static void deleteProduct()
+        {
+            Console.WriteLine("What product do you want to remove? Type the number corresponding to the product!");
+            for(int i = 0; i < _customers[_selectedPerson]._shoppingCart.Count; i++)
+            {
+                Console.WriteLine("(" + (i + 1) + ") - " + _customers[_selectedPerson]._shoppingCart[i]._goods._name);
+            }
+            int selectedDeleteProduct;
+            while (true)
+            {
+                selectedDeleteProduct = (intInput() - 1);
+                if(selectedDeleteProduct > _customers[_selectedPerson]._shoppingCart.Count)
+                {
+                    Console.WriteLine("Not valid, try again!");
+                }else if(selectedDeleteProduct < 0 ){
+                    Console.WriteLine("Not valid, try again!");
+                }
+                else
+                {
+                    break;
+                }
+            }
+            _customers[_selectedPerson]._shoppingCart.RemoveAt(selectedDeleteProduct);
+            Console.WriteLine("Remove product from shopping cart!");
+
+        }
+
+        public static int calculateShippingCost(int weight, int price)
+        {
+            int shipping;
+            if(price > 5000){ shipping = 0; }
+            else if(weight < 500) { shipping = 29; }
+            else if (weight < 1500) { shipping = 49; }
+            else if (weight < 2500) { shipping = 79; }
+            else if (weight < 5000) { shipping = 149; }
+            else{shipping = 499;}
+            return shipping;
         }
 
         public static bool selectProduct(int product)
         {
-            Console.WriteLine(_selectedCategories[product]._name + "is selected\n\n");
+            Console.WriteLine(_selectedCategories[product]._name + " is selected\n\n");
             Console.WriteLine(_selectedCategories[product]._name + "\nWeight: " + _selectedCategories[product]._weight + "\nDescriptions: " + _selectedCategories[product]._desc + "\nPrice: " + _selectedCategories[product]._price + "SEK");
             Console.WriteLine("Just type the quantity you want, type 0 for none!");
-            int quantity = int.Parse(Console.ReadLine());
+            int quantity = intInput();
             if(quantity != 0)
             {
                 _customers[_selectedPerson]._shoppingCart.Add(new ShoppingCart(_selectedCategories[product], quantity));
@@ -146,7 +242,7 @@ namespace Labb1
 
                     Console.WriteLine("(" + tmp + ") - " + _customers[i]._userName);
                 }
-                int selectPerson = int.Parse(Console.ReadLine()) - 1;
+                int selectPerson = intInput() - 1;
                 if(_customers.Count < selectPerson)
                 {
                     Console.WriteLine("Thats not a valid customers! Try Again!");
@@ -289,7 +385,19 @@ namespace Labb1
             while (true)
             {
                 Console.WriteLine("What is your Social Security Number (ÅÅÅÅMMDDXXXX)?");
-                persNr = long.Parse(Console.ReadLine());
+                while (true)
+                {
+                    try
+                    {
+                        persNr = long.Parse(Console.ReadLine());
+                        break;
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Not a valid input, try again!");
+                    }
+
+                }
                 if(persNr > 99999999999)
                 {
                     break;
@@ -319,6 +427,22 @@ namespace Labb1
             return toReturn;
         }
 
-        
+        public static int intInput()
+        {
+            int toReturn;
+            while (true)
+            {
+                try
+                {
+                    toReturn = int.Parse(Console.ReadLine());
+                    break;
+                }
+                catch
+                {
+                    Console.WriteLine("Not a valid input, try again!");
+                }
+            }
+            return toReturn;
+        }
     }
 }

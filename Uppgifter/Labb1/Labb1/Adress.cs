@@ -22,7 +22,7 @@ namespace Labb1
                 try
                 {
                     Console.WriteLine("What is your street number?");
-                    _streetNumber = int.Parse(Console.ReadLine());
+                    _streetNumber = Program.intInput();
                     break;
                 }
                 catch
@@ -43,8 +43,8 @@ namespace Labb1
                 try
                 {
                     Console.WriteLine("Whats your Zip Code?");
-                    zipcode = int.Parse(Console.ReadLine());
-                    if(zipcode > 9999)
+                    zipcode = Program.intInput();
+                    if (zipcode > 9999)
                     {
                         break;
                     }
