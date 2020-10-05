@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metoder", "Metoder\Metoder.csproj", "{427A75DA-4EB1-4AC3-8CA7-09B23B7A5CAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{427A75DA-4EB1-4AC3-8CA7-09B23B7A5CAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{427A75DA-4EB1-4AC3-8CA7-09B23B7A5CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{427A75DA-4EB1-4AC3-8CA7-09B23B7A5CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427A75DA-4EB1-4AC3-8CA7-09B23B7A5CAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
