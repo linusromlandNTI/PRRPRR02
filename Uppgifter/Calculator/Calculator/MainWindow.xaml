@@ -6,23 +6,6 @@
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" >
-
-            <Grid x:Name="mainGrid">
-<!--
-                <TextBlock Name="title" Grid.ColumnSpan="3" Text="Cool numbers here" TextAlignment="Center" FontSize="50" FontFamily="Mono" Padding="0,10,0,0" Background="SlateGray"/>
-                <Button Name="btn1" Grid.Column="0" Grid.Row="1" Content="1" FontSize="50" FontFamily="Mono" FontWeight="Bold" />
-                <Button Name="btn2" Grid.Column="1" Grid.Row="1" Content="2" FontSize="50" FontFamily="Mono" FontWeight="Bold" />
-                <Button Name="btn3" Grid.Column="2" Grid.Row="1" Content="3" FontSize="50" FontFamily="Mono" FontWeight="Bold" />
-                <Button Name="btn4" Grid.Column="0" Grid.Row="2" Content="4" FontSize="50" FontFamily="Mono" FontWeight="Bold" />
-                <Button Name="btn5" Grid.Column="1" Grid.Row="2" Content="5" FontSize="50" FontFamily="Mono" FontWeight="Bold" />
-                <Button Name="btn6" Grid.Column="2" Grid.Row="2" Content="6" FontSize="50" FontFamily="Mono" FontWeight="Bold" />
-                <Button Name="btn7" Grid.Column="0" Grid.Row="3" Content="7" FontSize="50" FontFamily="Mono" FontWeight="Bold" />
-                <Button Name="btn8" Grid.Column="1" Grid.Row="3" Content="8" FontSize="50" FontFamily="Mono" FontWeight="Bold" />
-                <Button Name="btn9" Grid.Column="2" Grid.Row="3" Content="9" FontSize="50" FontFamily="Mono" FontWeight="Bold" />
-                <Button Name="btn0" Grid.Column="1" Grid.Row="4" Content="0" FontSize="50" FontFamily="Mono" FontWeight="Bold" />
-   -->
-                </Grid>
-
-
-    
+    <Grid x:Name="mainGrid">
+            </Grid>
 </Window>
