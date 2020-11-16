@@ -34,8 +34,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MainWindow.xaml.cs" />
         <option value="$PROJECT_DIR$/MainWindow.xaml" />
+        <option value="$PROJECT_DIR$/MainWindow.xaml.cs" />
       </list>
     </option>
   </component>
@@ -48,7 +48,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -79,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605523732284</updated>
-      <workItem from="1605523791361" duration="515000" />
+      <workItem from="1605523791361" duration="1678000" />
     </task>
     <servers />
   </component>
@@ -103,25 +104,25 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="190" key="GridCell.Tab.0.bottom" timestamp="1605524239174">
+    <state width="1238" height="112" key="GridCell.Tab.0.bottom" timestamp="1605525091338">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="190" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1605524239174" />
-    <state width="1238" height="190" key="GridCell.Tab.0.center" timestamp="1605524239174">
+    <state width="1238" height="112" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1605525091338" />
+    <state width="1238" height="112" key="GridCell.Tab.0.center" timestamp="1605525091338">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="190" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1605524239174" />
-    <state width="1238" height="190" key="GridCell.Tab.0.left" timestamp="1605524239174">
+    <state width="1238" height="112" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1605525091338" />
+    <state width="1238" height="112" key="GridCell.Tab.0.left" timestamp="1605525091338">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="190" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1605524239174" />
-    <state width="1238" height="190" key="GridCell.Tab.0.right" timestamp="1605524239174">
+    <state width="1238" height="112" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1605525091338" />
+    <state width="1238" height="112" key="GridCell.Tab.0.right" timestamp="1605525091338">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="190" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1605524239174" />
-    <state x="67" y="0" key="SettingsEditor" timestamp="1605524137607">
+    <state width="1238" height="112" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1605525091338" />
+    <state x="67" y="0" key="SettingsEditor" timestamp="1605524623397">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="67" y="0" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1605524137607" />
+    <state x="67" y="0" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1605524623397" />
   </component>
 </project>
