@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Data;
 using System.Diagnostics;
+using System.Drawing;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace Calculator
 {
@@ -10,10 +13,26 @@ namespace Calculator
         //CONFIG VARIABLES
         private int GridHeight = 5;
         private int GridWidth = 4;
-        
+
+        private TextBlock display;
         public MainWindow()
         {
             InitializeComponent();
+            
+            display = new TextBlock
+            {
+                FontSize = 50,
+                TextAlignment = TextAlignment.Right,
+                HorizontalAlignment = HorizontalAlignment.Right
+            };
+
+            display.Background = Brushes.White;
+            mainGrid.Children.Add(display);
+            display.SetValue(Grid.RowProperty, 0);
+            display.SetValue(Grid.ColumnProperty, 0);
+            display.SetValue(Grid.ColumnSpanProperty, 3);
+            
+            
             
             for (int i = 0; i < GridWidth; i++)
             {
@@ -25,25 +44,56 @@ namespace Calculator
             }
             
             string[,] buttons = new string[,] {
-                {"", "", "", "C" },
+                {"", "", "", "*" },
                 {"7", "8", "9", "/"},
-                {"4", "5", "6", "*"},
+                {"4", "5", "6", "-"},
                 {"1", "2", "3", "+"},
-                {".", "0", "=", "-"}
+                {".", "0", "CLEAR", "EQUALS"}
             };
             
             for (int i = 0; i < buttons.GetLength(0); i++)
             {
                 for (int j = 0; j < buttons.GetLength(1); j++)
                 {
-                    if (buttons[i, j] == "") continue;
+                    if (buttons[i, j].Equals("")) continue;
+
                     Button tmp = new Button();
                     tmp.SetValue(Grid.ColumnProperty, j);
                     tmp.SetValue(Grid.RowProperty, i);
-                    tmp.SetValue(ContentProperty, buttons[i,j]);
+                    tmp.SetValue(ContentProperty, buttons[i, j]);
+                    tmp.Click += new RoutedEventHandler(BtnClick);
+                    tmp.Background = Brushes.Aqua;
+                    if (buttons[i, j].Equals("EQUALS")) tmp.Background = Brushes.LimeGreen;
+
+
                     mainGrid.Children.Add(tmp);
                 }
             }
+        }
+        
+        private void BtnClick(object sender, RoutedEventArgs e)
+        {
+            if (e.OriginalSource is Button tmp)
+            {
+                if (tmp.Content == "EQUALS")
+                {
+                    display.Text = calc(tmp.Content.ToString());
+                    return;
+                }
+                if (tmp.Content == "CLEAR")
+                {
+                    display.Text = "";
+                    return;
+                }
+                display.Text += tmp.Content;
+            }
+
+        }
+
+        private string calc(string input)
+        {
+            return new DataTable().Compute(display.Text, null).ToString(); //Tydligen får jag inte använda detta så lös nåt annat
+
         }
     }
 }
