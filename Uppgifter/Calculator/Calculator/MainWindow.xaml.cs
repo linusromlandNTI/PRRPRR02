@@ -16,10 +16,11 @@ namespace Calculator
         private int GridWidth = 4;
 
         private TextBlock display;
+
         public MainWindow()
         {
             InitializeComponent();
-            
+
             display = new TextBlock
             {
                 FontSize = 50,
@@ -32,26 +33,28 @@ namespace Calculator
             display.SetValue(Grid.RowProperty, 0);
             display.SetValue(Grid.ColumnProperty, 0);
             display.SetValue(Grid.ColumnSpanProperty, 3);
-            
-            
-            
+
+
+
             for (int i = 0; i < GridWidth; i++)
             {
                 mainGrid.ColumnDefinitions.Add(new ColumnDefinition());
             }
+
             for (int i = 0; i < GridHeight; i++)
             {
                 mainGrid.RowDefinitions.Add(new RowDefinition());
             }
-            
-            string[,] buttons = new string[,] {
-                {"", "", "", "*" },
+
+            string[,] buttons = new string[,]
+            {
+                {"", "", "", "*"},
                 {"7", "8", "9", "/"},
                 {"4", "5", "6", "-"},
                 {"1", "2", "3", "+"},
                 {".", "0", "CLEAR", "EQUALS"}
             };
-            
+
             for (int i = 0; i < buttons.GetLength(0); i++)
             {
                 for (int j = 0; j < buttons.GetLength(1); j++)
@@ -71,7 +74,7 @@ namespace Calculator
                 }
             }
         }
-        
+
         private void BtnClick(object sender, RoutedEventArgs e)
         {
             if (e.OriginalSource is Button tmp)
@@ -81,11 +84,13 @@ namespace Calculator
                     display.Text = calcWithoutCheat(display.Text);
                     return;
                 }
+
                 if (tmp.Content == "CLEAR")
                 {
                     display.Text = "";
                     return;
                 }
+
                 display.Text += tmp.Content;
             }
 
@@ -96,31 +101,59 @@ namespace Calculator
             //Måste tyvärr lösa denna även fast den gör allt jag vill. 
             return new DataTable().Compute(display.Text, null).ToString();
         }
+
         private string calcWithoutCheat(string input)
         {
             string output = "";
             List<CalcModel> calculate = new List<CalcModel>();
             char[] operators = {'*', '/', '+', '-'};
+            char[] numbers = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0'};
+
             if (input != "")
             {
+                CalcModel tmp = new CalcModel();
+
                 for (int i = 0; i < input.Length; i++)
                 {
                     for (int j = 0; j < operators.Length; j++)
                     {
                         if (input[i] == operators[j])
                         {
-                            CalcModel tmp = new CalcModel();
                             tmp.OperatorMath = input[i];
-                            calculate.Add(tmp);
+                            goto breakHere2;
                         }
                     }
                 }
 
-                for (int i = 0; i < calculate.Count; i++)
+                breakHere2 :
+                if (tmp.print() == "")
                 {
-                    
-                }
+                    int number = 0;
+                    for (int i = 0; i < input.Length; i++)
+                    {
+                        for (int j = 0; j < numbers.Length; j++)
+                        {
+                            if (input[i] == numbers[j])
+                            {
+                                number = number + int.Parse(input[i].ToString());
+                            }
+                            else
+                            {
+                                goto breakHere;
+                            }
 
+                        }
+                    }
+
+                    breakHere :
+                    calculate.Add(tmp);
+
+                    for (int i = 0; i < calculate.Count; i++)
+                    {
+                        Console.WriteLine(calculate[i].print());
+                    }
+
+                }
             }
             return output;
         }

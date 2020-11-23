@@ -35,8 +35,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/MainWindow.xaml" />
-        <option value="$PROJECT_DIR$/MainWindow.xaml.cs" />
         <option value="$PROJECT_DIR$/CalcModel.cs" />
+        <option value="$PROJECT_DIR$/MainWindow.xaml.cs" />
       </list>
     </option>
   </component>
@@ -84,7 +84,7 @@
       <workItem from="1605523791361" duration="2504000" />
       <workItem from="1605606143002" duration="420000" />
       <workItem from="1605696671124" duration="2046000" />
-      <workItem from="1606127862630" duration="2789000" />
+      <workItem from="1606127862630" duration="3809000" />
     </task>
     <servers />
   </component>
@@ -109,22 +109,22 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="112" key="GridCell.Tab.0.bottom" timestamp="1606130058500">
+    <state width="1238" height="112" key="GridCell.Tab.0.bottom" timestamp="1606131654691">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="112" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1606130058500" />
-    <state width="1238" height="112" key="GridCell.Tab.0.center" timestamp="1606130058500">
+    <state width="1238" height="112" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1606131654691" />
+    <state width="1238" height="112" key="GridCell.Tab.0.center" timestamp="1606131654691">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="112" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1606130058500" />
-    <state width="1238" height="112" key="GridCell.Tab.0.left" timestamp="1606130058500">
+    <state width="1238" height="112" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1606131654691" />
+    <state width="1238" height="112" key="GridCell.Tab.0.left" timestamp="1606131654691">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="112" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1606130058500" />
-    <state width="1238" height="112" key="GridCell.Tab.0.right" timestamp="1606130058500">
+    <state width="1238" height="112" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1606131654691" />
+    <state width="1238" height="112" key="GridCell.Tab.0.right" timestamp="1606131654691">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="112" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1606130058500" />
+    <state width="1238" height="112" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1606131654691" />
     <state x="67" y="0" key="SettingsEditor" timestamp="1605525821292">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
