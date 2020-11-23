@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
@@ -77,7 +78,7 @@ namespace Calculator
             {
                 if (tmp.Content == "EQUALS")
                 {
-                    display.Text = calc(tmp.Content.ToString());
+                    display.Text = calcWithoutCheat(display.Text);
                     return;
                 }
                 if (tmp.Content == "CLEAR")
@@ -92,8 +93,36 @@ namespace Calculator
 
         private string calc(string input)
         {
-            return new DataTable().Compute(display.Text, null).ToString(); //Tydligen får jag inte använda detta så lös nåt annat
+            //Måste tyvärr lösa denna även fast den gör allt jag vill. 
+            return new DataTable().Compute(display.Text, null).ToString();
+        }
+        private string calcWithoutCheat(string input)
+        {
+            string output = "";
+            List<CalcModel> calculate = new List<CalcModel>();
+            char[] operators = {'*', '/', '+', '-'};
+            if (input != "")
+            {
+                for (int i = 0; i < input.Length; i++)
+                {
+                    for (int j = 0; j < operators.Length; j++)
+                    {
+                        if (input[i] == operators[j])
+                        {
+                            CalcModel tmp = new CalcModel();
+                            tmp.OperatorMath = input[i];
+                            calculate.Add(tmp);
+                        }
+                    }
+                }
 
+                for (int i = 0; i < calculate.Count; i++)
+                {
+                    
+                }
+
+            }
+            return output;
         }
     }
 }
