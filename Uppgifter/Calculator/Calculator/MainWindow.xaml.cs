@@ -126,17 +126,15 @@ namespace Calculator
 
                 noNumber:
                 CalcModel calc = new CalcModel();
+                Console.WriteLine("before " + input);
                 for (int j = 0; j < number.Length; j++)
                 {
-                    input.TrimStart(number[i]);
+                    input = input.TrimStart(number[i]);
                 }
+                Console.WriteLine("after " + input);
+
                 calc.NumberMath = int.Parse(number);
                 calculate.Add(calc);
-            }
-
-            for (int i = 0; i < calculate.Count; i++)
-            {
-                Console.WriteLine(calculate[i].NumberMath);
             }
             return output;
         }
