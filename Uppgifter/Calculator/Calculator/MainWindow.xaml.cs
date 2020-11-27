@@ -104,58 +104,52 @@ namespace Calculator
 
         private string calcWithoutCheat(string input)
         {
-            string output = "";
             List<CalcModel> calculate = new List<CalcModel>();
-            char[] operators = {'*', '/', '+', '-'};
-            char[] numbers = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0'};
-
-            if (input != "")
+            string output = "";
+            for (int i = 0; i < input.Length; i++)
             {
-                CalcModel tmp = new CalcModel();
-
-                for (int i = 0; i < input.Length; i++)
+                string number = "";
+                for (int j = 0; j < input.Length; j++)
                 {
-                    for (int j = 0; j < operators.Length; j++)
+                    string tmp = checkIfNumber(input[j].ToString());
+                    if (tmp != "err")
                     {
-                        if (input[i] == operators[j])
-                        {
-                            tmp.OperatorMath = input[i];
-                            goto breakHere2;
-                        }
+                        number += tmp;
+                    }
+                    else
+                    {
+                        goto noNumber;
                     }
                 }
 
-                breakHere2 :
-                if (tmp.print() == "")
-                {
-                    int number = 0;
-                    for (int i = 0; i < input.Length; i++)
-                    {
-                        for (int j = 0; j < numbers.Length; j++)
-                        {
-                            if (input[i] == numbers[j])
-                            {
-                                number = number + int.Parse(input[i].ToString());
-                            }
-                            else
-                            {
-                                goto breakHere;
-                            }
+                noNumber:
+                CalcModel calc = new CalcModel();
+                calc.NumberMath = int.Parse(number);
+                calculate.Add(calc);
+            }
 
-                        }
-                    }
-
-                    breakHere :
-                    calculate.Add(tmp);
-
-                    for (int i = 0; i < calculate.Count; i++)
-                    {
-                        Console.WriteLine(calculate[i].print());
-                    }
-
-                }
+            for (int i = 0; i < calculate.Count; i++)
+            {
+                Console.WriteLine(calculate[i].NumberMath);
             }
             return output;
+        }
+
+        private string checkIfNumber(string input)
+        {
+            string num = "";
+            int tmp = 0;
+            try
+            {
+                tmp = int.Parse(input);
+                num = tmp.ToString();
+
+            }
+            catch
+            {
+                num = "err";
+            };
+            return num;
         }
     }
 }
