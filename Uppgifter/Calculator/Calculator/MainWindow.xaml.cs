@@ -102,11 +102,13 @@ namespace Calculator
             return new DataTable().Compute(display.Text, null).ToString();
         }
 
-        private string calcWithoutCheat(string input)
+        private string calcWithoutCheat(string theInput)
         {
+            string input = theInput;
             List<CalcModel> calculate = new List<CalcModel>();
             string output = "";
-            for (int i = 0; i < input.Length; i++)
+            int length = input.Length;
+            for (int i = 0; i < length; i++)
             {
                 string number = "";
                 for (int j = 0; j < input.Length; j++)
@@ -124,6 +126,10 @@ namespace Calculator
 
                 noNumber:
                 CalcModel calc = new CalcModel();
+                for (int j = 0; j < number.Length; j++)
+                {
+                    input.TrimStart(number[i]);
+                }
                 calc.NumberMath = int.Parse(number);
                 calculate.Add(calc);
             }
