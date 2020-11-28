@@ -98,11 +98,9 @@ namespace Calculator
                     }
 
                     display.Text = CalcWithoutCheat();
-                    tmp.Content = "";
                     goto skipNumberCheck;
                 case "CLEAR":
                     display.Text = "";
-                    tmp.Content = "";
                     if (calculateList.Count > 0) calculateList.Clear();
                     goto skipNumberCheck;
             }
@@ -137,8 +135,9 @@ namespace Calculator
                     }
                 }
             }
-            skipNumberCheck:
             display.Text += tmp.Content;
+            skipNumberCheck:
+            Console.Write("");
         }
 
         private string Calc()
