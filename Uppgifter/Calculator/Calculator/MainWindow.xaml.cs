@@ -15,7 +15,13 @@ namespace Calculator
         private int GridHeight = 5;
         private int GridWidth = 4;
 
+        //List of all inserted items;
+        private List<CalcModel> calculateList = new List<CalcModel>();
+
+        //Init of the Textblock/Display
         private TextBlock display;
+
+        private String theNumbers;
 
         public MainWindow()
         {
@@ -33,7 +39,6 @@ namespace Calculator
             display.SetValue(Grid.RowProperty, 0);
             display.SetValue(Grid.ColumnProperty, 0);
             display.SetValue(Grid.ColumnSpanProperty, 3);
-
 
 
             for (int i = 0; i < GridWidth; i++)
@@ -77,53 +82,38 @@ namespace Calculator
 
         private void BtnClick(object sender, RoutedEventArgs e)
         {
-            if (e.OriginalSource is Button tmp)
+            string[] numbers = new[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
+            string[] operators = new[] {"-", "+", "*", "/"};
+
+            if (!(e.OriginalSource is Button tmp)) return;
+            
+            switch (tmp.Content)
             {
-                if (tmp.Content == "EQUALS")
-                {
-                    display.Text = calcWithoutCheat(display.Text);
-                    return;
-                }
-
-                if (tmp.Content == "CLEAR")
-                {
-                    display.Text = "";
-                    return;
-                }
-
-                display.Text += tmp.Content;
+                case "EQUALS":
+                    display.Text = CalcWithoutCheat();
+                    break;
+                case "CLEAR":
+                    display.Text = "";      
+                    calculateList.Clear();
+                    break;
             }
-
+            
+            int pos = Array.IndexOf(numbers, tmp.Content);
+            
+            display.Text += tmp.Content;
         }
 
-        private string calc(string input)
+        private string Calc()
         {
             //Måste tyvärr lösa denna även fast den gör allt jag vill. 
             return new DataTable().Compute(display.Text, null).ToString();
         }
 
-        private string calcWithoutCheat(string theInput)
+        private string CalcWithoutCheat()
         {
             string output = "";
-            output = "don't like constant, stop klaga!";
+            output = "don't like constant, stop complaining!";
             return output;
-        }
-
-        private string checkIfNumber(string input)
-        {
-            string num = "";
-            int tmp = 0;
-            try
-            {
-                tmp = int.Parse(input);
-                num = tmp.ToString();
-
-            }
-            catch
-            {
-                num = "err";
-            };
-            return num;
         }
     }
 }
