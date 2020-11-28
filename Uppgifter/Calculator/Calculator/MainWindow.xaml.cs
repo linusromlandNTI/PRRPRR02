@@ -120,14 +120,12 @@ namespace Calculator
                         {                                                      
                             CalcModel tmpNumber = new CalcModel();             
                             tmpNumber.NumberMath = int.Parse(theNumbers);
-                            Console.WriteLine(tmpNumber.print());
                             calculateList.Add(tmpNumber);
                             theNumbers = "";
                         }                                                      
                         int pos = Array.IndexOf(operators, tmp.Content);
                         CalcModel tmpOperator = new CalcModel();            
                         tmpOperator.OperatorMath = operators[pos];
-                        Console.WriteLine(tmpOperator.print() + "suppo: " + operators[pos]);
                         calculateList.Add(tmpOperator);                     
                     }
                     catch (Exception e1)
