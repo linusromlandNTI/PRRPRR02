@@ -89,14 +89,14 @@ namespace Calculator
             switch (tmp.Content)
             {
                 case "EQUALS":
-                    display.Text = CalcWithoutCheat();
                     if (theNumbers != "")
                     {
-                        CalcModel tmpNumber = new CalcModel();         
+                        CalcModel tmpNumber = new CalcModel();             
                         tmpNumber.NumberMath = int.Parse(theNumbers);
-                        Console.WriteLine(int.Parse(theNumbers));
+                        calculateList.Add(tmpNumber);
                         theNumbers = "";
                     }
+                    display.Text = CalcWithoutCheat();
                     tmp.Content = "";
                     goto skipNumberCheck;
                 case "CLEAR":
@@ -152,6 +152,8 @@ namespace Calculator
             {
                 Console.WriteLine(calculateList[i].print());
             }
+
+            //output = (calculateList[0].NumberMath + calculateList[2].NumberMath).ToString();
             return output;
         }
     }
