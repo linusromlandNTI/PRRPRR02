@@ -86,7 +86,6 @@ namespace Calculator
             string[] operators = new[] {"-", "+", "*", "/"};
 
             if (!(e.OriginalSource is Button tmp)) return;
-            bool skip = false;
             switch (tmp.Content)
             {
                 case "EQUALS":
@@ -104,14 +103,19 @@ namespace Calculator
                 try
                 {
                     int pos = Array.IndexOf(numbers, tmp.Content);
-                    Console.WriteLine("is number : " + numbers[pos]);
+                    theNumbers += numbers[pos];
                 }
                 catch (Exception exception)
                 {
                     try
                     {
+                        CalcModel tmpNumber = new CalcModel();
+                        tmpNumber.NumberMath = int.Parse(theNumbers);
+                        calculateList.Add(tmpNumber);
                         int pos = Array.IndexOf(operators, tmp.Content);
-                        Console.WriteLine("is operator: " + operators[pos]);
+                        CalcModel tmpOperator = new CalcModel();            
+                        tmpOperator.OperatorMath = operators[pos][0];     
+                        calculateList.Add(tmpOperator);                     
                     }
                     catch (Exception e1)
                     {
