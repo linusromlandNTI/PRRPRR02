@@ -104,61 +104,8 @@ namespace Calculator
 
         private string calcWithoutCheat(string theInput)
         {
-            char[] operators = {'/', '*', '-', '+'};
-            string input = theInput;
-            List<CalcModel> calculate = new List<CalcModel>();
             string output = "";
-            int length = input.Length;
-            for (int i = 0; i < length; i++)
-            {
-                CalcModel calc = new CalcModel();
-                string number = "";
-                string theOperator = "";
-                for (int j = 0; j < input.Length; j++)
-                {
-                    string tmp = checkIfNumber(input[j].ToString());
-                    if (tmp != "err")
-                    {
-                        number += tmp;
-                    }
-                    else
-                    {
-                        goto noNumber;
-                    }
-                }
-                for (int j = 0; j < operators.Length; j++)
-                {
-                    if (input[i] == operators[j])
-                    {
-                        calc.OperatorMath = input[i];
-                        input = input.TrimStart(operators[j]);
-                        calculate.Add(calc);
-                        goto noOperator;
-
-                    }
-                }
-                noNumber:
-                //Does this if it is a number
-                if (number != "")
-                {
-                    Console.WriteLine("before " + input);
-                    for (int j = 0; j < number.Length; j++)
-                    {
-                        input = input.TrimStart(number[i]);
-                    }
-                    Console.WriteLine("after " + input);
-                    calc.NumberMath = int.Parse(number);
-                    calculate.Add(calc);
-                }
-                noOperator:
-                if (input == "")goto doneWithLoop;
-            }
-            doneWithLoop:
-            Console.WriteLine("Done with loop len: " + calculate.Count);
-            for (int i = 0; i < calculate.Count; i++)
-            {
-                Console.WriteLine(calculate[i].print());
-            }
+            output = "don't like constant, stop klaga!";
             return output;
         }
 
