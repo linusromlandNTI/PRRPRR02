@@ -86,20 +86,41 @@ namespace Calculator
             string[] operators = new[] {"-", "+", "*", "/"};
 
             if (!(e.OriginalSource is Button tmp)) return;
-            
+            bool skip = false;
             switch (tmp.Content)
             {
                 case "EQUALS":
                     display.Text = CalcWithoutCheat();
-                    break;
+                    tmp.Content = "";
+                    goto skipNumberCheck;
                 case "CLEAR":
-                    display.Text = "";      
-                    calculateList.Clear();
-                    break;
+                    display.Text = "";
+                    tmp.Content = "";
+                    if (calculateList.Count > 0) calculateList.Clear();
+                    goto skipNumberCheck;
             }
-            
-            int pos = Array.IndexOf(numbers, tmp.Content);
-            
+
+            {
+                try
+                {
+                    int pos = Array.IndexOf(numbers, tmp.Content);
+                    Console.WriteLine("is number : " + numbers[pos]);
+                }
+                catch (Exception exception)
+                {
+                    try
+                    {
+                        int pos = Array.IndexOf(operators, tmp.Content);
+                        Console.WriteLine("is operator: " + operators[pos]);
+                    }
+                    catch (Exception e1)
+                    {
+                        Console.WriteLine("Something went wrong!");
+                        throw;
+                    }
+                }
+            }
+            skipNumberCheck:
             display.Text += tmp.Content;
         }
 
