@@ -19,11 +19,11 @@ namespace Calculator
         public string print()
         {
             string tmp = "";
-            if (number == 0)
+            if (number != 0)
             {
                 tmp = number.ToString();
             }
-            if (string.IsNullOrEmpty(calc))
+            else if (!(string.IsNullOrEmpty(calc)))
             {
                 tmp = OperatorMath;
             }

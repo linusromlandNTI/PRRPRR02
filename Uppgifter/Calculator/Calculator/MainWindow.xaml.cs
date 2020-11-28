@@ -21,7 +21,7 @@ namespace Calculator
         //Init of the Textblock/Display
         private TextBlock display;
 
-        private String theNumbers;
+        private String theNumbers = "";
 
         public MainWindow()
         {
@@ -111,7 +111,6 @@ namespace Calculator
                 {
                     int pos = Array.IndexOf(numbers, tmp.Content);
                     theNumbers += numbers[pos];
-                    Console.WriteLine(theNumbers);
                 }
                 catch (Exception exception)
                 {
@@ -120,13 +119,15 @@ namespace Calculator
                         if (theNumbers != "")                                  
                         {                                                      
                             CalcModel tmpNumber = new CalcModel();             
-                            tmpNumber.NumberMath = int.Parse(theNumbers);      
+                            tmpNumber.NumberMath = int.Parse(theNumbers);
+                            Console.WriteLine(tmpNumber.print());
                             calculateList.Add(tmpNumber);
                             theNumbers = "";
                         }                                                      
                         int pos = Array.IndexOf(operators, tmp.Content);
                         CalcModel tmpOperator = new CalcModel();            
-                        tmpOperator.OperatorMath = operators[pos];     
+                        tmpOperator.OperatorMath = operators[pos];
+                        Console.WriteLine(tmpOperator.print() + "suppo: " + operators[pos]);
                         calculateList.Add(tmpOperator);                     
                     }
                     catch (Exception e1)
