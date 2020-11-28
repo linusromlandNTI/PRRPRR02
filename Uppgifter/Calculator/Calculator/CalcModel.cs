@@ -21,7 +21,7 @@
             {
                 cooling = NumberMath.ToString();
             }
-            if (OperatorMath != null)
+            else if (OperatorMath != null)
             {
                 cooling = OperatorMath.ToString();
             }

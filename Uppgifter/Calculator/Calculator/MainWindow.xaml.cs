@@ -90,6 +90,13 @@ namespace Calculator
             {
                 case "EQUALS":
                     display.Text = CalcWithoutCheat();
+                    if (theNumbers != "")
+                    {
+                        CalcModel tmpNumber = new CalcModel();         
+                        tmpNumber.NumberMath = int.Parse(theNumbers);
+                        Console.WriteLine(int.Parse(theNumbers));
+                        theNumbers = "";
+                    }
                     tmp.Content = "";
                     goto skipNumberCheck;
                 case "CLEAR":
@@ -104,14 +111,19 @@ namespace Calculator
                 {
                     int pos = Array.IndexOf(numbers, tmp.Content);
                     theNumbers += numbers[pos];
+                    Console.WriteLine(theNumbers);
                 }
                 catch (Exception exception)
                 {
                     try
                     {
-                        CalcModel tmpNumber = new CalcModel();
-                        tmpNumber.NumberMath = int.Parse(theNumbers);
-                        calculateList.Add(tmpNumber);
+                        if (theNumbers != "")                                  
+                        {                                                      
+                            CalcModel tmpNumber = new CalcModel();             
+                            tmpNumber.NumberMath = int.Parse(theNumbers);      
+                            calculateList.Add(tmpNumber);
+                            theNumbers = "";
+                        }                                                      
                         int pos = Array.IndexOf(operators, tmp.Content);
                         CalcModel tmpOperator = new CalcModel();            
                         tmpOperator.OperatorMath = operators[pos][0];     
@@ -137,7 +149,10 @@ namespace Calculator
         private string CalcWithoutCheat()
         {
             string output = "";
-            output = "don't like constant, stop complaining!";
+            for (int i = 0; i < calculateList.Count; i++)
+            {
+                Console.WriteLine(calculateList[i].print());
+            }
             return output;
         }
     }
