@@ -151,21 +151,14 @@ namespace Calculator
             string output = "";
             for (int i = 1; i < calculateList.Count; i = i + 2)
             {
-                switch (calculateList[i].print())
+                output = calculateList[i].print() switch
                 {
-                    case "+":
-                        output = addTwoItems(calculateList[i - 1].NumberMath, calculateList[i + 1].NumberMath);
-                        break;
-                    case "-":
-                        output = subtractTwoItems(calculateList[i - 1].NumberMath, calculateList[i + 1].NumberMath);
-                        break;
-                    case "/":
-                        output = divideTwoItems(calculateList[i - 1].NumberMath, calculateList[i + 1].NumberMath);
-                        break;
-                    case "*":
-                        output = multiplyTwoItems(calculateList[i - 1].NumberMath, calculateList[i + 1].NumberMath);
-                        break;
-                }
+                    "+" => addTwoItems(calculateList[i - 1].NumberMath, calculateList[i + 1].NumberMath),
+                    "-" => subtractTwoItems(calculateList[i - 1].NumberMath, calculateList[i + 1].NumberMath),
+                    "/" => divideTwoItems(calculateList[i - 1].NumberMath, calculateList[i + 1].NumberMath),
+                    "*" => multiplyTwoItems(calculateList[i - 1].NumberMath, calculateList[i + 1].NumberMath),
+                    _ => output
+                };
             }
             if (output == "" && calculateList.Count > 0) output = calculateList[0].print();
             return output;
