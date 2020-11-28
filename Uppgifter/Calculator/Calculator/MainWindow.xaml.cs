@@ -153,7 +153,7 @@ namespace Calculator
                 Console.WriteLine(calculateList[i].print());
             }
 
-            //output = (calculateList[0].NumberMath + calculateList[2].NumberMath).ToString();
+            output = (calculateList[0].NumberMath + calculateList[2].NumberMath).ToString();
             return output;
         }
     }
