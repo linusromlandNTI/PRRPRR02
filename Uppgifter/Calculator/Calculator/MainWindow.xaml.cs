@@ -91,11 +91,12 @@ namespace Calculator
                 case "EQUALS":
                     if (theNumbers != "")
                     {
-                        CalcModel tmpNumber = new CalcModel();             
+                        CalcModel tmpNumber = new CalcModel();
                         tmpNumber.NumberMath = int.Parse(theNumbers);
                         calculateList.Add(tmpNumber);
                         theNumbers = "";
                     }
+
                     display.Text = CalcWithoutCheat();
                     tmp.Content = "";
                     goto skipNumberCheck;
@@ -116,17 +117,18 @@ namespace Calculator
                 {
                     try
                     {
-                        if (theNumbers != "")                                  
-                        {                                                      
-                            CalcModel tmpNumber = new CalcModel();             
+                        if (theNumbers != "")
+                        {
+                            CalcModel tmpNumber = new CalcModel();
                             tmpNumber.NumberMath = int.Parse(theNumbers);
                             calculateList.Add(tmpNumber);
                             theNumbers = "";
-                        }                                                      
+                        }
+
                         int pos = Array.IndexOf(operators, tmp.Content);
-                        CalcModel tmpOperator = new CalcModel();            
+                        CalcModel tmpOperator = new CalcModel();
                         tmpOperator.OperatorMath = operators[pos];
-                        calculateList.Add(tmpOperator);                     
+                        calculateList.Add(tmpOperator);
                     }
                     catch (Exception e1)
                     {
@@ -148,13 +150,43 @@ namespace Calculator
         private string CalcWithoutCheat()
         {
             string output = "";
-            for (int i = 0; i < calculateList.Count; i++)
+            for (int i = 1; i < calculateList.Count; i = i + 2)
             {
-                Console.WriteLine(calculateList[i].print());
+                switch (calculateList[i].print())
+                {
+                    case "+":
+                        output = addTwoItems(calculateList[i - 1].NumberMath, calculateList[i + 1].NumberMath);
+                        break;
+                    case "-":
+                        output = subtractTwoItems(calculateList[i - 1].NumberMath, calculateList[i + 1].NumberMath);
+                        break;
+                    case "/":
+                        output = divideTwoItems(calculateList[i - 1].NumberMath, calculateList[i + 1].NumberMath);
+                        break;
+                    case "*":
+                        output = multiplyTwoItems(calculateList[i - 1].NumberMath, calculateList[i + 1].NumberMath);
+                        break;
+                }
             }
-
-            output = (calculateList[0].NumberMath + calculateList[2].NumberMath).ToString();
+            if (output == "" && calculateList.Count > 0) output = calculateList[0].print();
             return output;
+        }
+
+        private string addTwoItems(int num1, int num2)
+        {
+            return (num1 + num2).ToString();
+        }
+        private string subtractTwoItems(int num1, int num2)
+        {
+            return (num1 - num2).ToString();
+        }
+        private string multiplyTwoItems(int num1, int num2)
+        {
+            return (num1 * num2).ToString();
+        }
+        private string divideTwoItems(int num1, int num2)
+        {
+            return (num1 / num2).ToString();
         }
     }
 }
