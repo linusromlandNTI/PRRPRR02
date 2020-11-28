@@ -22,7 +22,62 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cbef0ae-b083-4a9f-b28a-0854839b8bb0" name="Default Changelist" comment="" />
+    <list default="true" id="4cbef0ae-b083-4a9f-b28a-0854839b8bb0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../../../LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Calculator/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Calculator/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Calculator/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Calculator/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Calculator/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Calculator/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Calculator/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Calculator/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Calculator/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Calculator/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Calculator/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Calculator/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Calculator/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Calculator/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Calculator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Calculator/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Calculator/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/App.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalcModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CalcModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calculator.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calculator.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/Labb1/Adress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb1/Labb1/Adress.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/Labb1/Categories.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb1/Labb1/Categories.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/Labb1/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb1/Labb1/Customer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/Labb1/Goods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb1/Labb1/Goods.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/Labb1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb1/Labb1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb1/Labb1/ShoppingCart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb1/Labb1/ShoppingCart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb2/OOPIntro.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb2/OOPIntro.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb2/OOPIntro/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb2/OOPIntro/Customer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb2/OOPIntro/Monster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb2/OOPIntro/Monster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb2/OOPIntro/Nocco.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb2/OOPIntro/Nocco.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb2/OOPIntro/OOPIntro.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb2/OOPIntro/OOPIntro.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb2/OOPIntro/Produkt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb2/OOPIntro/Produkt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labb2/OOPIntro/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labb2/OOPIntro/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka35/Hello World/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka35/Hello World/App.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka35/Hello World/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka35/Hello World/Form1.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka35/Hello World/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka35/Hello World/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka35/Hello World/Form1.resx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka35/Hello World/Form1.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka35/Hello World/Hello World.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka35/Hello World/Hello World.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka35/Hello World/Hello World.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka35/Hello World/Hello World.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka35/Hello World/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka35/Hello World/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka35/Hello World/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka35/Hello World/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka35/Hello World/Properties/Resources.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka35/Hello World/Properties/Resources.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka35/Hello World/Properties/Resources.resx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka35/Hello World/Properties/Resources.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka35/Hello World/Properties/Settings.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka35/Hello World/Properties/Settings.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka35/Hello World/Properties/Settings.settings" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka35/Hello World/Properties/Settings.settings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka35/YouDead/YouDead/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka35/YouDead/YouDead/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka35/YouDead/YouDead/YouDead.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka35/YouDead/YouDead/YouDead.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka35/YouDead/YouDead/YouDead.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka35/YouDead/YouDead/YouDead.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka37/ListorOchArrayer/ListorOchArrayer/People.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka37/ListorOchArrayer/ListorOchArrayer/People.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka39/OOPTest/OOPTest/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka39/OOPTest/OOPTest/Person.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka41/Vecka41/Coffee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka41/Vecka41/Coffee.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka41/Vecka41/Milk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka41/Vecka41/Milk.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka41/Vecka41/Nocco.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka41/Vecka41/Nocco.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Vecka41/Vecka41/Produkt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Vecka41/Vecka41/Produkt.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,6 +144,7 @@
       <workItem from="1606515646795" duration="27000" />
       <workItem from="1606560107203" duration="4744000" />
       <workItem from="1606565055236" duration="2275000" />
+      <workItem from="1606581588289" duration="28000" />
     </task>
     <servers />
   </component>
