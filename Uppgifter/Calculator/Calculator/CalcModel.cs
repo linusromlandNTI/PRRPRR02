@@ -1,32 +1,33 @@
-﻿namespace Calculator
+﻿using System;
+
+namespace Calculator
 {
     public class CalcModel
     {
-        private int number;
-        private char calc;
+        private int number = 0;
+        private string calc;
         
         public int NumberMath {
             get { return number; }
             set { number = value; }
         }
-        public char OperatorMath {
+        public string OperatorMath {
             get { return calc; }
             set { calc = value; }
         }
 
         public string print()
         {
-            string cooling = "";
-            if (NumberMath != null)
+            string tmp = "";
+            if (number == 0)
             {
-                cooling = NumberMath.ToString();
+                tmp = number.ToString();
             }
-            else if (OperatorMath != null)
+            if (string.IsNullOrEmpty(calc))
             {
-                cooling = OperatorMath.ToString();
+                tmp = OperatorMath;
             }
-
-            return cooling;
+            return tmp;
         }
     }
 }

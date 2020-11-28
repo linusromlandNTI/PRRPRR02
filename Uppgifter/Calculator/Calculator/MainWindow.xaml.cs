@@ -126,7 +126,7 @@ namespace Calculator
                         }                                                      
                         int pos = Array.IndexOf(operators, tmp.Content);
                         CalcModel tmpOperator = new CalcModel();            
-                        tmpOperator.OperatorMath = operators[pos][0];     
+                        tmpOperator.OperatorMath = operators[pos];     
                         calculateList.Add(tmpOperator);                     
                     }
                     catch (Exception e1)
