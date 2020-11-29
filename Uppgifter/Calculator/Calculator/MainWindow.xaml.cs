@@ -57,7 +57,7 @@ namespace Calculator
                 {"7", "8", "9", "/"},
                 {"4", "5", "6", "-"},
                 {"1", "2", "3", "+"},
-                {".", "0", "CLEAR", "EQUALS"}
+                {"", "0", "CLEAR", "EQUALS"}
             };
 
             for (int i = 0; i < buttons.GetLength(0); i++)
