@@ -23,6 +23,7 @@
         </e>
       </e>
       <e p="packages" t="ExcludeRecursive" />
+      <e p="README.md" t="Include" />
     </e>
   </component>
 </project>
