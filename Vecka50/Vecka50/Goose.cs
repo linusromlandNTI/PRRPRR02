@@ -17,7 +17,7 @@ namespace Vecka50
 
         public override void Rest()
         {
-            Console.WriteLine("The goose is now resting, Schhh!");
+            Console.WriteLine("The goose is now resting, Sch!");
         }
 
         public override void Eat()
