@@ -25,10 +25,5 @@ namespace Vecka50
         {
             Console.WriteLine("The goose is eating!");
         }
-
-        public void Swim()
-        {
-            Console.WriteLine("Haha, you cant swim you stupid dog");
-        }
     }
 }

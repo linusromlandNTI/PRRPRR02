@@ -23,6 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a824eb5-ddc8-4cd0-8917-06623a993aa2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Accessories/Accessories.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accessories/DogBed.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accessories/FoodBowl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accessories/GooseHat.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../../LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
@@ -57,6 +61,22 @@
       <change beforePath="$PROJECT_DIR$/../Labb2/OOPIntro/OOPIntro.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Labb2/OOPIntro/OOPIntro.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Labb2/OOPIntro/Produkt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Labb2/OOPIntro/Produkt.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Labb2/OOPIntro/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Labb2/OOPIntro/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Labb3/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Labb3/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Labb3/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Labb3/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Labb3/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Labb3/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Labb3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Labb3/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Labb3/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Labb3/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Labb3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Labb3/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Labb3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Labb3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Labb3/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Labb3/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animals/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Animal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animals/Cat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Cat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animals/Dog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Dog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animals/Goose.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Goose.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labb3.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Labb3.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labb3.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Labb3.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Vecka35/Hello World/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../Vecka35/Hello World/App.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Vecka35/Hello World/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Vecka35/Hello World/Form1.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Vecka35/Hello World/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Vecka35/Hello World/Form1.cs" afterDir="false" />
@@ -88,9 +108,9 @@
       <change beforePath="$PROJECT_DIR$/../../Vecka50/.idea/.idea.Vecka50/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Vecka50/.idea/.idea.Vecka50/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Vecka50/.idea/.idea.Vecka50/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Vecka50/.idea/.idea.Vecka50/riderModule.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Vecka50/Vecka50.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../Vecka50/Vecka50.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Vecka50/Vecka50/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Animal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Vecka50/Vecka50/Dog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Dog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Vecka50/Vecka50/Goose.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Animals/Goose.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vecka50/Vecka50/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Vecka50/Vecka50/Animal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vecka50/Vecka50/Dog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Vecka50/Vecka50/Dog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vecka50/Vecka50/Goose.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Vecka50/Vecka50/Goose.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Vecka50/Vecka50/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Vecka50/Vecka50/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Vecka50/Vecka50/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Vecka50/Vecka50/Properties/AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Vecka50/Vecka50/Vecka50.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Vecka50/Vecka50/Vecka50.csproj" afterDir="false" />
@@ -110,18 +130,27 @@
         <option value="$PROJECT_DIR$/Goose.cs" />
         <option value="$PROJECT_DIR$/Cat.cs" />
         <option value="$PROJECT_DIR$/Animal.cs" />
-        <option value="$PROJECT_DIR$/Animals/Animal.cs" />
         <option value="$PROJECT_DIR$/Animals/Dog.cs" />
+        <option value="$PROJECT_DIR$/Animals/Animal.cs" />
+        <option value="$PROJECT_DIR$/Animals/Goose.cs" />
+        <option value="$PROJECT_DIR$/Accessories/Accessories.cs" />
+        <option value="$PROJECT_DIR$/Accessories/DogBed.cs" />
+        <option value="$PROJECT_DIR$/Accessories/FoodBowl.cs" />
+        <option value="$PROJECT_DIR$/Accessories/GooseHat.cs" />
+        <option value="$PROJECT_DIR$/Animals/Cat.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1lVqVcnJIO2y8Sk4YkhyUnRM7NR" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -154,7 +183,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607692633787</updated>
-      <workItem from="1607692638408" duration="311000" />
+      <workItem from="1607692638408" duration="1290000" />
     </task>
     <servers />
   </component>
@@ -175,6 +204,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

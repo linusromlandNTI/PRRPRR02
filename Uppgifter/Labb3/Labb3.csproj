@@ -38,6 +38,10 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Accessories\Accessories.cs" />
+        <Compile Include="Accessories\DogBed.cs" />
+        <Compile Include="Accessories\FoodBowl.cs" />
+        <Compile Include="Accessories\GooseHat.cs" />
         <Compile Include="Animals\Animal.cs" />
         <Compile Include="Animals\Cat.cs" />
         <Compile Include="Animals\Dog.cs" />
