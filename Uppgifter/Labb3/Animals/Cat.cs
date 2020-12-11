@@ -1,15 +1,13 @@
 ﻿using System;
 
-namespace Vecka50
+namespace Labb3
 {
     public class Cat : Animal
     {
         public Cat()
         {
             NumberOfLimb = 4;
-            Color = "idk";
             Price = 500;
-            Console.WriteLine("Created new cat!");
         }
         public override void Breathe()
         {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Vecka50
+namespace Labb3
 {
     public class FoodBowl: Accesories
     {

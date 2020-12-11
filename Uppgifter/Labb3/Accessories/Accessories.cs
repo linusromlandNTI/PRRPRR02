@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace Vecka50
+namespace Labb3
 {
-    public abstract class Accesories
+    public abstract class Accesories: Product
     {
-        //Properties of animal
-        public int Price { get; set; }
+        //Properties of Accesories
+        public int Weight { get; set; }
         public string Color { get; set; }
         
         //Functions for the Class/What it can do
