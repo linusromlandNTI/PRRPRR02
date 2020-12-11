@@ -7,8 +7,7 @@ namespace Labb3
         public DogBed()
         {
             Color = "idk";
-            Price = 500;
-            Console.WriteLine("Created new DogBed!");
+            Price = 125;
         }
         public override void Throw()
         {

@@ -7,8 +7,7 @@ namespace Labb3
         public GooseHat()
         {
             Color = "idk";
-            Price = 25000;
-            Console.WriteLine("Created new dog!");
+            Price = 833;
         }
         public override void Throw()
                 {

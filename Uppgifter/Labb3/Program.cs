@@ -31,8 +31,9 @@ namespace Labb3
                 case 3:
                     ShowCart();
                     break;
-                case 4:
-                //USE PRODUCT/ANIMAL
+                case 4: 
+                    UseProductAnimal();
+                    break;
                 case 0:
                     System.Environment.Exit(1);
                     break;
@@ -40,10 +41,71 @@ namespace Labb3
         }
 
 
+        public static void UseProductAnimal()
+        {
+            if (_products.Count <= 0)
+            {
+                Console.WriteLine("You cart is empty, add some before using them!");
+            }
+            else
+            {
+                string print = "Choose what you want to do by choosing!\n";
+                for (int i = 0; i < _products.Count; i++)
+                {
+                    int temp = i + 1;
+                    print += "(" + temp + ") - " + _products[i].Name + "\n";
+                }
+
+                Console.WriteLine(print + "(0) - Go Back");
+                int tmp = IntInput()-1;
+                if (_products[tmp] is Animal animal)
+                {
+                    Console.WriteLine("What do you want to do?\n(1) - Breathe\n(2) - Eat\n(3) - Restn\n(0) - Go Back");
+                    switch (IntInput())
+                    {
+                        case 1:
+                            animal.Breathe();
+                            break;
+                        case 2:
+                            animal.Eat();
+                            break;
+                        case 3:
+                            animal.Rest();
+                            break;
+                        case 0:
+                            break;
+                    }
+                }else if (_products[tmp] is Accesories accesorie)
+                {
+                    Console.WriteLine("What do you want to do?\n(1) - Use\n(2) - Destroy\n(3) - Throw\n(0) - Go Back");
+                    switch (IntInput())
+                    {
+                        case 1:
+                            accesorie.Use();
+                            break;
+                        case 2:
+                            accesorie.Destroy();
+                            _products.RemoveAt(tmp);
+                            break;
+                        case 3:
+                            accesorie.Throw();
+                            break;
+                        case 0:
+                            break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Something went wrong!");
+                }
+            }
+            
+        }
+        
         public static void ShowAnimals()
         {
             Console.WriteLine("To buy animal, select it!\nAnimals in Stock:");
-            Console.WriteLine("(1) - Dog\n(2) - Goose\n(3) - Cat\n(0) - Go Back");
+            Console.WriteLine("(1) - Dog [25000kr]\n(2) - Goose [150kr]\n(3) - Cat [500kr]\n(0) - Go Back");
             Random rnd = new Random();
             string color = colors[rnd.Next(1, colors.Length)];
             string theName = names[rnd.Next(1, names.Length)];
@@ -51,7 +113,7 @@ namespace Labb3
             switch (IntInput())
             {
                 case 1:
-                    name = "The dog " + theName;
+                    name = "The Dog " + theName;
                     _products.Add(new Dog{Name = name, Color = color});
                     Console.WriteLine("Added a " + color + " Dog named " + theName + " to you cart");
                     break;
@@ -73,7 +135,7 @@ namespace Labb3
         public static void ShowAccessories()
         {
             Console.WriteLine("To buy accessories, select it!");
-            Console.WriteLine("(1) - Dog Bed\n(2) - Food Bowl\n(3) - Goose Hat\n(0) - Go Back");
+            Console.WriteLine("(1) - Dog Bed [125kr]\n(2) - Food Bowl [75kr]\n(3) - Goose Hat [833kr]\n(0) - Go Back");
             switch (IntInput())
             {
                 case 1:
@@ -101,11 +163,15 @@ namespace Labb3
             }
             else
             {
+                int totalPrice = 0;
                 Console.WriteLine("This is your cart:");
                 for (int i = 0; i < _products.Count; i++)
                 {
+                    totalPrice = totalPrice + _products[i].Price;
                     Console.WriteLine(_products[i].Name + " " + _products[i].Price + "kr");
                 }
+
+                Console.WriteLine("Your total is: " + totalPrice + "kr\nSorry we dont accept payments!");
             }
             Console.WriteLine("Choose what you want do!");
             Console.WriteLine("(1) - Go back\n(0) - Exit Program");
@@ -119,6 +185,7 @@ namespace Labb3
                     break;
             }
         }
+        
         public static int IntInput()
         {
             int toReturn;

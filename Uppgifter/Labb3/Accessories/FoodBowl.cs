@@ -7,8 +7,7 @@ namespace Labb3
         public FoodBowl()
         {
             Color = "idk";
-            Price = 25000;
-            Console.WriteLine("Created new dog!");
+            Price = 75;
         }
         public override void Throw()
         {
