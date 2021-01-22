@@ -9,7 +9,7 @@ namespace SOLID_Labb
             Animal[] animals = {new Dog("Black"),
                             new Hedgehog("Pink"),
                             new Bird("Yellow")};
-
+            Human person = new Human("CoolName");
             Console.WriteLine("###############");
             Console.WriteLine();
 
@@ -17,7 +17,7 @@ namespace SOLID_Labb
             {
                 if (animal is Dog dog)
                 {
-                    dog.TransferOwnership("Niklas");
+                    person.GainOwnershipOfAnimal(dog);
                 }
 
                 animal.Eat();

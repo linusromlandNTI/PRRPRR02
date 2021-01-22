@@ -27,10 +27,6 @@ namespace SOLID_Labb
         {
             Console.WriteLine("Dog is eating. " + _owner +" is happy!");
         }
-
-        public void TransferOwnership(string owner)
-        {
-            _owner = owner;
-        }
+        
     }
 }
