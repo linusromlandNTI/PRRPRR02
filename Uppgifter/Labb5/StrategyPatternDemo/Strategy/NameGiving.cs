@@ -15,9 +15,9 @@ namespace StrategyPatternDemo
             _strategy = strategy;
         }
 
-        public void CalculationInterface(double num1, double num2)
+        public void CalculationInterface(string name)
         {
-            _strategy.Calculate(num1, num2);
+            _strategy.NameGivning(name);
         }
     }
 }

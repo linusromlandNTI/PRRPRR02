@@ -9,36 +9,35 @@ namespace StrategyPatternDemo
         {
             while (true)
             {
-                Console.WriteLine("What operation would you like to perform? ('+', '-', '*', '/')");
-                var operation = Console.ReadLine();
-                double numberOne;
-                double numberTwo;
-                ICalculationStrategy strat;
+                Console.WriteLine("Welcome to cool things");
+                string name = "";
+                INameGivingStrategy strat;
 
-                Console.WriteLine("Enter the first number:");
-                numberOne = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine("Enter the second number:");
-                numberTwo = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Enter the name:");
+                name = Console.ReadLine();
                 bool reset = false;
-
-                switch (operation)
+                name = name.ToLower();
+                switch (name)
                 {
-                    case "+":
-                        strat = new AdditionStrategy();
+                    case "linus":
+                        strat = new LinusStrategy();
                         break;
-                    case "-":
-                        strat = new SubtractionStrategy();
+                    case "anton":
+                        strat = new AntonStrategy();
                         break;
-                    case "*":
-                        strat = new MultiplicationStrategy();
+                    case "markus":
+                        strat = new MarkusStrategy();
                         break;
-                    case "/":
-                        strat = new DivisionStrategy();
+                    case "niklas":
+                        strat = new NiklasStrategy();
+                        break;
+                    case "svante":
+                        strat = new SvanteStrategy();
                         break;
                     default:
-                        Console.WriteLine("Please select a valid operation");
+                        Console.WriteLine("not valid f u");
                         reset = true;
-                        strat = new AdditionStrategy();
+                        strat = new LinusStrategy();
                         break;
                 }
 
@@ -48,7 +47,7 @@ namespace StrategyPatternDemo
                 }
 
                 var calc = new Calculation(strat);
-                calc.CalculationInterface(numberOne, numberTwo);
+                calc.CalculationInterface(name);
 
                 Console.WriteLine("Do you wish to continue? 'y'/'n'");
                 if(Console.ReadLine().ToLower() != "y")

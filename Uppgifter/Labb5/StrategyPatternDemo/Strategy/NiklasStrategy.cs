@@ -4,12 +4,11 @@ using System.Text;
 
 namespace StrategyPatternDemo.Strategy
 {
-    class MultiplicationStrategy : ICalculationStrategy
+    class NiklasStrategy : INameGivingStrategy
     {
-        public void Calculate(double numberOne, double numberTwo)
+        public void NameGivning(string name)
         {
-            var result = numberOne * numberTwo;
-            Console.WriteLine("The result is: " + result);
+            Console.WriteLine("The niklass is: " + name);
         }
     }
 }

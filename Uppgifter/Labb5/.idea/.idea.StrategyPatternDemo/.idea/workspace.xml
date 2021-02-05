@@ -22,7 +22,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45f881f6-3f3f-4895-94c1-915da0d39f2d" name="Default Changelist" comment="" />
+    <list default="true" id="45f881f6-3f3f-4895-94c1-915da0d39f2d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/StrategyPatternDemo/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StrategyPatternDemo/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StrategyPatternDemo/Strategy/AntonStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StrategyPatternDemo/Strategy/AntonStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StrategyPatternDemo/Strategy/INameGivingStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StrategyPatternDemo/Strategy/INameGivingStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StrategyPatternDemo/Strategy/LinusStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StrategyPatternDemo/Strategy/LinusStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StrategyPatternDemo/Strategy/MarkusStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StrategyPatternDemo/Strategy/MarkusStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StrategyPatternDemo/Strategy/NameGiving.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StrategyPatternDemo/Strategy/NameGiving.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StrategyPatternDemo/Strategy/NiklasStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StrategyPatternDemo/Strategy/NiklasStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StrategyPatternDemo/Strategy/SvanteStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StrategyPatternDemo/Strategy/SvanteStrategy.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,9 +43,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/StrategyPatternDemo/Strategy/NameGiving.cs" />
         <option value="$PROJECT_DIR$/StrategyPatternDemo/Strategy/INameGivingStrategy.cs" />
+        <option value="$PROJECT_DIR$/StrategyPatternDemo/Strategy/NameGiving.cs" />
+        <option value="$PROJECT_DIR$/StrategyPatternDemo/Strategy/SvanteStrategy.cs" />
+        <option value="$PROJECT_DIR$/StrategyPatternDemo/Strategy/NiklasStrategy.cs" />
+        <option value="$PROJECT_DIR$/StrategyPatternDemo/Strategy/MarkusStrategy.cs" />
+        <option value="$PROJECT_DIR$/StrategyPatternDemo/Strategy/LinusStrategy.cs" />
         <option value="$PROJECT_DIR$/StrategyPatternDemo/Strategy/AntonStrategy.cs" />
+        <option value="$PROJECT_DIR$/StrategyPatternDemo/Program.cs" />
       </list>
     </option>
   </component>
@@ -81,6 +95,7 @@
       <updated>1612177366498</updated>
       <workItem from="1612177372992" duration="161000" />
       <workItem from="1612179301511" duration="560000" />
+      <workItem from="1612531109594" duration="398000" />
     </task>
     <servers />
   </component>

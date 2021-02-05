@@ -4,12 +4,11 @@ using System.Text;
 
 namespace StrategyPatternDemo.Strategy
 {
-    class DivisionStrategy : ICalculationStrategy
+    class MarkusStrategy : INameGivingStrategy
     {
-        public void Calculate(double numberOne, double numberTwo)
+        public void NameGivning(string name)
         {
-            var result = numberOne / numberTwo;
-            Console.WriteLine("The result is: " + result);
+            Console.WriteLine("The markus is: " + name);
         }
     }
 }

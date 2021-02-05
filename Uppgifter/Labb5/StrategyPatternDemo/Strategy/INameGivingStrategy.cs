@@ -6,6 +6,6 @@ namespace StrategyPatternDemo
 {
     interface INameGivingStrategy
     {
-        void NameGivning(double numberOne, double numberTwo);
+        void NameGivning(string name);
     }
 }
